@@ -1,0 +1,2462 @@
+[
+  {
+    "artist": "4 Non Blondes",
+    "song": "What's Up",
+    "chords": "/Chords/4non-blondes-whats-up.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Jalan Cahaya",
+    "chords": "/chords/adaband_jalan_cahaya.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Kau Auraku",
+    "chords": "/chords/adaband_kau_auraku.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Manusia Bodoh",
+    "chords": "/chords/adaband_manusia_bodoh.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Masih Sahabatku Kekasihku",
+    "chords": "/chords/adaband_masih_sahabatku_kekasihku.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Nyawa Hidupku",
+    "chords": "/chords/adaband_nyawa_hidupku.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Pemujamu",
+    "chords": "/chords/adaband_pemujamu.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ada Band",
+    "song": "Setengah Hati",
+    "chords": "/chords/adaband-setengah-hati.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Adera",
+    "song": "Lebih Indah",
+    "chords": "/Chords/adera-lebih-indah.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Afgan",
+    "song": "Kepadamu Aku Bersujud",
+    "chords": "/Chords/afgan_kepadamu_kubersujud.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Afgan",
+    "song": "Terlalu Cinta",
+    "chords": "/Chords/afgan-terlalu-cinta.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Alfian Harahap",
+    "song": "Semalam Di Cianjur",
+    "chords": "/Chords/alfian_semalam_di_cianjur.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Alfred Gare & PAX Group",
+    "song": "Ikan Nae Di Pante",
+    "chords": "/Chords/alfred-gare-ikan-nae-di-pante.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Amy Search Ft. Inka Christie",
+    "song": "Cinta Kita",
+    "chords": "/Chords/amysearch_cinta_kita.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Andy Williams",
+    "song": "Love Story",
+    "chords": "/Chords/andy-williams-love-story.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Anji",
+    "song": "Dia",
+    "chords": "/Chords/anji_dia.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Anji",
+    "song": "Menunggu Kamu",
+    "chords": "/Chords/anji_menunggu_kamu.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ari Lasso",
+    "song": "Arti Cinta",
+    "chords": "/Chords/ari_lasso_arti_cinta.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ari Lasso",
+    "song": "Hampa",
+    "chords": "/Chords/ari_lasso_hampa.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ari Wibowo",
+    "song": "Singkong dan Keju",
+    "chords": "/Chords/ari_wibowo_anak_singkong.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Armada",
+    "song": "Asal Kau Bahagia",
+    "chords": "/Chords/armada_asal_kau_bahagia.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Armada",
+    "song": "Hargai Aku",
+    "chords": "/Chords/armada_hargai_aku.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Armada",
+    "song": "Harusnya Aku",
+    "chords": "/Chords/armada_harusnya_aku.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Armada",
+    "song": "Katakan Sejujurnya",
+    "chords": "/Chords/armada_katakan_sejujurnya.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Armada",
+    "song": "Mau Di Bawa Kemana",
+    "chords": "/Chords/armada_mau_dibawa_kemana.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Armada",
+    "song": "Pergi Pagi Pulang Pagi",
+    "chords": "/Chords/armada_pergi_pagi_pulang_pagi.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Barry L & The Rhythm Service",
+    "song": "Sesaat Kau Hadir",
+    "chords": "/Chords/barry-likumhuwa-sesaat-kau-hadir.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "BCL Feat. Ari Lasso",
+    "song": "Aku Dan Dirimu",
+    "chords": "/Chords/bcl_aku_dan_dirimu.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "BCL",
+    "song": "Karena Kucinta Kau",
+    "chords": "/Chords/bcl_karena_kucinta_kau.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bee Gees",
+    "song": "Don't Forget To Remember",
+    "chords": "/Chords/beegees_don't_forget_to_remember.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bee Gees",
+    "song": "To Love Somebody",
+    "chords": "/Chords/beegees_to_love_somebody.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bee Gees",
+    "song": "Words",
+    "chords": "/Chords/beegees_words.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Betharia Sonata",
+    "song": "Hati Yang Luka",
+    "chords": "/Chords/betharia-sonata-hati-yang-luka.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bilal Indrajaya",
+    "song": "Niscaya",
+    "chords": "/Chords/bilal-indrajaya-niscaya.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Ada Anak Bertanya Pada Bapaknya",
+    "chords": "/Chords/bimbo_ada_anak_bertanya.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Bermata Tapi Tak Melihat",
+    "chords": "/Chords/bimbo_bermata_tak_melihat.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Flamboyan",
+    "chords": "/Chords/bimbo_flamboyan.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Jumpa Tuk Berpisah",
+    "chords": "/Chords/bimbo_jumpa_tuk_berpisah.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Mawar Asuhan Rembulan",
+    "chords": "/Chords/bimbo-mawar-asuhan-rembulan.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Rindu Rasul",
+    "chords": "/Chords/bimbo_rindu_kami_padamu.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Sajadah Panjang",
+    "chords": "/Chords/bimbo_sajadah_panjang.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Semalam Di Malaysia",
+    "chords": "/Chords/bimbo_semalamdimalaysia.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bimbo",
+    "song": "Tuhan",
+    "chords": "/Chords/bimbo_tuhan.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bing Slamet",
+    "song": "Nurlela",
+    "chords": "/Chords/bingslamet_nurlela.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Black Brothers",
+    "song": "Hari Kiamat",
+    "chords": "/Chords/blackbrothers_hari_kiamat.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Black Brothers",
+    "song": "Hilang",
+    "chords": "/Chords/blackbrothers_hilang.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Black Brothers",
+    "song": "Terjalin Kembali",
+    "chords": "/Chords/blackbrothers_terjalin_kembali.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Bonjovi",
+    "song": "Bed Of Roses",
+    "chords": "/Chords/bonjovi_bed_of_roses.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bonjovi",
+    "song": "Never Say Goodbye",
+    "chords": "/Chords/bonjovi_never_say_goodbye.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Boomerang",
+    "song": "Pelangi",
+    "chords": "/Chords/boomerang-pelangi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Boy Shandy",
+    "song": "Rayuan Maut",
+    "chords": "/Chords/boyshandy_rayuanmaut.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bragi",
+    "song": "Janji",
+    "chords": "/Chords/bragi_janji.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Broery Marantika",
+    "song": "Angin Malam",
+    "chords": "/Chords/broery_angin_malam.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Broery Marantika",
+    "song": "Biarkan Bulan Bicara",
+    "chords": "/Chords/broery_biarkan_bulan.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Broery Marantika",
+    "song": "Duri Dan Cinta",
+    "chords": "/Chords/broery_duri_dan_cinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Broery Marantika Ft. Dewi Yull",
+    "song": "Jangan Ada Dusta Diantara Kita",
+    "chords": "/Chords/broery_jangan_ada_dusta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Broery Marantika",
+    "song": "Jangan Ditanya",
+    "chords": "/Chords/broery_jangan_ditanya.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Broery Marantika Ft. Dewi Yull",
+    "song": "Kharisma Cinta",
+    "chords": "/Chords/broery_kharisma-cinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Broery Marantika Ft. Dewi Yull",
+    "song": "Rindu Yang Terlarang",
+    "chords": "/Chords/broery_rindu_yang_terlarang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Broery Marantika",
+    "song": "Mungkinkah",
+    "chords": "/Chords/broery_mungkinkah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Bob Tutupoli",
+    "song": "Widuri",
+    "chords": "/Chords/bobtutupoli_widuri.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Budi Doremi",
+    "song": "Mesin Waktu",
+    "chords": "/Chords/Budi-Doremi-Mesin-Waktu.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Budi Doremi",
+    "song": "Ramadhan Penuh Cinta",
+    "chords": "/Chords/budi-doremi-ramadhan-penuh-cinta.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Cake",
+    "song": "I Will Survive",
+    "chords": "/Chords/cake_i_will_survive.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "CCR",
+    "song": "Cotton Fields",
+    "chords": "/Chords/ccr_cotton_fields.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "CCR",
+    "song": "Proud Mary",
+    "chords": "/Chords/ccr_proud_mary.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "CCR",
+    "song": "Wrote A Song For Everyone",
+    "chords": "/Chords/ccr_wrote_song.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Chakra Khan",
+    "song": "Kekasih Bayangan",
+    "chords": "/Chords/cakra_khan_kekasih_bayangan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Christine Panjaitan ",
+    "song": "Tangan Tak Sampai",
+    "chords": "/Chords/christine-panjaitan-tangan-tak-sampai.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Chrisye",
+    "song": "Cintaku",
+    "chords": "/Chords/chrisye-cintaku.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Cici Paramida",
+    "song": "Wulan Merindu",
+    "chords": "/Chords/cici_paramida_wulan_merindu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Cokelat",
+    "song": "Jauh",
+    "chords": "/Chords/cokelat_jauh.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Cokelat",
+    "song": "Karma",
+    "chords": "/Chords/cokelat_karma.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Cut Yanthi & Obet Mahino",
+    "song": "Bolelebo",
+    "chords": "/Chords/cut-yanthi-obet-mahino-bolelebo.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Cliff Richard",
+    "song": "Congratulations",
+    "chords": "/Chords/cliff-richard-congratulations.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dan Byrd",
+    "song": "Boulevard",
+    "chords": "/Chords/dan-byrd-boulevard.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Apa Salah dan Dosaku",
+    "chords": "/Chords/dlloyd_apa_salah_dan_dosaku.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Bunga Nirwana",
+    "chords": "/Chords/dlloyd_bunga-nirwana.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Cinta Hampa",
+    "chords": "/Chords/dlloyd_cinta_hampa.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Curi-curi",
+    "chords": "/Chords/dlloyd-curi-curi.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Diam Diam Jatuh Cinta",
+    "chords": "/Chords/dlloyd-diam-diam-jatuh-cinta.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Hidup Dibui",
+    "chords": "/Chords/dlloyd_hidup_dibui.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Keagungan Tuhan",
+    "chords": "/Chords/dlloyd-keagungan-tuhan.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Mengapa Harus Jumpa",
+    "chords": "/Chords/dlloyd_mengapa_harus_jumpa.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Oh Tak Mungkin",
+    "chords": "/Chords/dlloyd-oh-tak-mungkin.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Titik Noda",
+    "chords": "/Chords/dlloyd_titik_noda.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'lloyd",
+    "song": "Sepanjang Lorong Gelap",
+    "chords": "/Chords/dlloyd_sepanjang_lorong_gelap.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "D'Masiv",
+    "song": "Cinta Ini Membunuhku",
+    "chords": "/Chords/dmasiv-cinta-ini-membunuhku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "D'Masiv",
+    "song": "Cinta Sampai Disini",
+    "chords": "/Chords/dmasiv_cinta_sampai_disini.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "D'Masiv",
+    "song": "Diantara Kalian",
+    "chords": "/Chords/dmasiv_diantara_kalian.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "D'Masiv",
+    "song": "Merindukanmu",
+    "chords": "/Chords/dmasiv-merindukanmu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "D'Masiv",
+    "song": "Pergilah kasih",
+    "chords": "/Chords/dmasiv-pergilah-kasih.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Deddy Dores",
+    "song": "Jangan Pisahkan",
+    "chords": "/Chords/deddy_dores_jangan_pisahkan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Deddy Dores",
+    "song": "Hilangnya Seorang Gadis",
+    "chords": "/Chords/deddydores_hilangnya.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Deep Purple",
+    "song": "Soldier Of Fortune",
+    "chords": "/Chords/deep_puprple_soldier_of_fortune.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Deep Purple",
+    "song": "When A Blind Man Cries",
+    "chords": "/Chords/deep_purple_when_a_blind_man_cries.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Angin",
+    "chords": "/Chords/dewa19_angin.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Arjuna",
+    "chords": "/Chords/dewa19_arjuna.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Bukan Rahasia",
+    "chords": "/Chords/dewa19_bukan_rahasia.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Dua Sejoli",
+    "chords": "/Chords/dewa19_dua_sejoli.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Kangen",
+    "chords": "/Chords/dewa19_kangen.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19 Feat Ello",
+    "song": "Kau Yang Kusayang",
+    "chords": "/Chords/dewa19_feat_ello_kau_yang_kusayang.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Pupus",
+    "chords": "/Chords/dewa19_pupus.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Kosong",
+    "chords": "/Chords/dewa19_kosong.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Roman Picisan",
+    "chords": "/Chords/dewa19_roman_picisan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dewa 19",
+    "song": "Separuh Nafas",
+    "chords": "/Chords/dewa19_separuh_nafas.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Diana Nasution",
+    "song": "Benci Tapi Rindu",
+    "chords": "/Chords/diana-nasution-benci-tapi-rindu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Diana Nasution",
+    "song": "Jangan Biarkan",
+    "chords": "/Chords/diana_nasution_jangan_biarkan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dina Mariana",
+    "song": "Sekedar Bertanya",
+    "chords": "/Chords/dina_mariana_sekedar_bertanya.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Drive",
+    "song": "Bersama bintang",
+    "chords": "/Chords/drive_bersama_bintang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Eagles",
+    "song": "Hotel California",
+    "chords": "/Chords/eagles-hotel-california.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ebiet G Ade",
+    "song": "Berita Kepada Kawan",
+    "chords": "/Chords/ebiet_gade_berita.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ebiet G Ade",
+    "song": "Camelia 2",
+    "chords": "/Chords/ebiet-g-ade-camelia2.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ebiet G Ade",
+    "song": "Camelia 4",
+    "chords": "/Chords/ebiet_gade_camelia4.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ebiet G Ade",
+    "song": "Cintaku Kandas Di Rerumputan",
+    "chords": "/Chords/ebiet_gade_cintaku_kandas.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ebiet G Ade",
+    "song": "KepadaMu Aku Pasrah",
+    "chords": "/Chords/ebiet_gade_kepadamu_aku_pasrah.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ebiet G Ade",
+    "song": "Titip Rindu Buat Ayah",
+    "chords": "/Chords/ebiet_gade_titip_rindu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Eddy Silitonga",
+    "song": "Alusi Au",
+    "chords": "/Chords/eddysilitonga_alusiau.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "El Corona",
+    "song": "Ikan Dalam Kolam",
+    "chords": "/Chords/el-corona-ikan-dalam-kolam.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "El Corona",
+    "song": "Pantun Janda",
+    "chords": "/Chords/el-corona-pantun-janda.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Element",
+    "song": "Cinta Sejati",
+    "chords": "/Chords/element-cinta-sejati.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Element",
+    "song": "Cinta Tak Bersyarat",
+    "chords": "/Chords/element-cinta-tak-bersyarat.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Element",
+    "song": "Rahasia Hati",
+    "chords": "/Chords/element-rahasia-hati.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Elliot James Reay",
+    "song": "I Think They Call This Love",
+    "chords": "/Chords/elliot-james-reay-i-think-they-call-this-call-love.html",
+    "status": "Ready"
+  },
+  {
+    "artist": "Elvis Presley",
+    "song": "It's Now Or Never",
+    "chords": "/Chords/elvis_presley_its_now_or_never.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Engelbert Humperdinck",
+    "song": "The Way It Use To Be",
+    "chords": "/Chords/engelbert_the_way_it_use.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Eric Clapton",
+    "song": "Wonderful Tonight",
+    "chords": "/Chords/eric_clapton_wonderful_tonight.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Europe",
+    "song": "The Final Countdown",
+    "chords": "/Chords/europe_final_countdown.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Exist",
+    "song": "Mencari Alasan",
+    "chords": "/Chords/exist-mencari-alasan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Exist",
+    "song": "Buih Jadi Permadani",
+    "chords": "/Chords/exist-buih-jadi-permadani.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Fahmi Sahab",
+    "song": "Kopi Dangdut",
+    "chords": "/Chords/fahmi-sahab-kopi-dangdut.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Faith No More",
+    "song": "Easy",
+    "chords": "/Chords/faith_no_more_easy.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Farid Hardja",
+    "song": "Ini Rindu",
+    "chords": "/Chords/farid-hardja-ini-rindu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Firman",
+    "song": "Kehilangan",
+    "chords": "/Chords/firman_kehilangan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Frank Sinatra",
+    "song": "My Way",
+    "chords": "/Chords/frank-sinatra-my-way.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "George Baker",
+    "song": "I've Been Away Too Long",
+    "chords": "/Chords/george_baker_ive_been_away.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "George Michael",
+    "song": "Chareless Whisper",
+    "chords": "/Chords/george_michael_chareless_whisper.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Gigi",
+    "song": "Akhirnya",
+    "chords": "/Chords/gigi_akhirnya.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Glenn Fredly",
+    "song": "Sekali Ini saja",
+    "chords": "/Chords/glen_fredly_sekali_ini_saja.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Gombloh",
+    "song": "Kugadaikan Cintaku",
+    "chords": "/Chords/gombloh_kugadaikan_cintaku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Grace Simon",
+    "song": "Lihat Air Mata",
+    "chords": "/Chords/grace_simon_lihat_air_mata.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Guns N Roses",
+    "song": "Don’t Cry",
+    "chords": "/Chords/gnr_dont_cry.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Haddad Alwi",
+    "song": "Al I’tiroof",
+    "chords": "/Chords/haddad_alwi_alitiroof.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Haddad Alwi",
+    "song": "Astagfirullah",
+    "chords": "/Chords/haddad_alwi_astagfirullah.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Happy Asmara",
+    "song": "Rungkad",
+    "chords": "/Chords/happy-amara-rungkad.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Hello",
+    "song": "Dua Cincin",
+    "chords": "/Chords/hello_dua_cincin.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Helloween",
+    "song": "Forever and One",
+    "chords": "/Chords/helloween_foreverandone.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Hendri Rotinsulu",
+    "song": "Diwajahmu Kulihat Bulan",
+    "chords": "/Chords/rotinsulu_diwajahmukulihat.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Hetty Koes Endang",
+    "song": "Esok Malam Kan Kujelang",
+    "chords": "/Chords/hetty-koes-endang-esok-malam-kan-kujelang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Humood",
+    "song": "Kun Anta",
+    "chords": "/Chords/humood_kun_anta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Iis Dahlia",
+    "song": "Fatwa Pujangga",
+    "chords": "/Chords/iis_dahlia_fatwa_pujangga.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Imam S Arifin",
+    "song": "Jandaku",
+    "chords": "/Chords/imamsarifin_jandaku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Iwan Fals",
+    "song": "Bento",
+    "chords": "/Chords/iwan_fals_bento.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Iwan Fals",
+    "song": "Bongkar",
+    "chords": "/Chords/iwan_fals_bongkar.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Iwan Fals",
+    "song": "Kumenanti Seorang Kekasih",
+    "chords": "/Chords/iwan-fals-kumenanti-seorang-kekasih.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Jaja Mihardja",
+    "song": "Cinta Sabun Mandi",
+    "chords": "/Chords/jaja_mihardja_cinta_sabun_mandi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Jamrud",
+    "song": "Pelangi Dimatamu",
+    "chords": "/Chords/jamrud-pelangi-dimatamu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Jhonny Iskandar",
+    "song": "Bukan Pengemis Cinta",
+    "chords": "/Chords/jhonny_iskandar_bukan_pengemis_cinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Jhonny Iskandar",
+    "song": "Secangkir Kopi",
+    "chords": "/Chords/jhonny_iskandar_secangkir_kopi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Josh Turner",
+    "song": "Your Man",
+    "chords": "/Chords/josh_turner_your_man.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Judika",
+    "song": "Aku Yang Tersakiti",
+    "chords": "/Chords/judika-aku-yang-tersakiti.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Kangen Band",
+    "song": "Cinta yang sempurna",
+    "chords": "/Chords/kangen_band_cinta_yang_sempurna.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Kerispatih",
+    "song": "Aku Harus Jujur",
+    "chords": "/Chords/kerispatih-aku-harus-jujur.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Kerispatih",
+    "song": "Demi Cinta",
+    "chords": "/Chords/kerispatih_demi_cinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Kerispatih",
+    "song": "Tapi Bukan Aku",
+    "chords": "/Chords/kerispatih-tapi-bukan-aku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Andaikan Kau Datang",
+    "chords": "/Chords/koesplus_andaikan_kau_datang.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Angin Laut",
+    "chords": "/Chords/koes_plus_angin_laut.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Ayah",
+    "chords": "/Chords/koes_plus_ayah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Bahagia Dan Derita",
+    "chords": "/Chords/koesplus-bahagia_dan_derita.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Berjumpa Lagi",
+    "chords": "/Chords/koesplus_berjumpa_lagi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Bis Sekolah",
+    "chords": "/Chords/koesplus_bis_sekolah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Buat Apa Susah",
+    "chords": "/Chords/koesplus_buat_apa_susah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Bujangan",
+    "chords": "/Chords/koesplus_bujangan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Bunga Di Tepi Jalan",
+    "chords": "/Chords/koesplus_bunga_ditepi_jalan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Cinta Mulia",
+    "chords": "/Chords/koesplus_cinta_mulia.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Cintamu Tlah Berlalu",
+    "chords": "/Chords/koesplus_cintamu_tlah_berlalu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Cubit Cubitan",
+    "chords": "/Chords/koesplus-cubit-cubitan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Dara Manisku",
+    "chords": "/Chords/koesplus_dara_manisku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Derita",
+    "chords": "/Chords/koesplus_derita.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Desaku",
+    "chords": "/Chords/koesplus_desaku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Desember",
+    "chords": "/Chords/koesplus_desember.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Diana",
+    "chords": "/Chords/koesplus_diana.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Doa Suciku",
+    "chords": "/Chords/koesplus_doa_suciku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Gadis Manis",
+    "chords": "/Chords/koesplus_gadis_manis.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Haru Dan Bahagia",
+    "chords": "/Chords/koesplus_haru_dan_bahagia.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Hatiku Beku",
+    "chords": "/Chords/koesplus_hatiku_beku.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Hatimu Hatiku",
+    "chords": "/Chords/koesplus_hatimu_hatiku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Hidup Yang Sepi",
+    "chords": "/Chords/koesplus_hidup_yang_sepi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Jangan Cemburu",
+    "chords": "/Chords/koesplus-jangan-cemburu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Jemu",
+    "chords": "/Chords/koesplus_jemu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Kapan-kapan",
+    "chords": "/Chords/koesplus_kapan_kapan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Kembali",
+    "chords": "/Chords/koesplus_kembali.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Kembali Ke Jakarta",
+    "chords": "/Chords/koesplus_kembali_kejakarta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Keroncong Pertemuan",
+    "chords": "/Chords/koesplus_keroncong_pertemuan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Kisah Sedih di Hari Minggu",
+    "chords": "/Chords/koesplus_kisah_sedih.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Kolam Susu",
+    "chords": "/Chords/koesplus_kolam_susu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Kursi Emas",
+    "chords": "/Chords/koesplus_kursi_emas.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Layang-Layang",
+    "chords": "/Chords/koesplus_layang_layang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Manis Dan Sayang",
+    "chords": "/Chords/koesplus_manis_dan_sayang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Mari Mari",
+    "chords": "/Chords/koesplus_mari_mari.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Mari Berjoget",
+    "chords": "/Chords/koesplus_mari_berjoget.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Mawar Bunga",
+    "chords": "/Chords/koesplus_mawar_bunga.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Muda Mudi",
+    "chords": "/Chords/koesplus_muda_mudi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Nusantara 2",
+    "chords": "/Chords/koesplus_nusantara2.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Nusantara 3",
+    "chords": "/Chords/koesplus_nusantara3.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Nusantara 6",
+    "chords": "/Chords/koesplus_nusantara6.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Nusantara 7",
+    "chords": "/Chords/koesplus_nusantara7.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "O La La",
+    "chords": "/Chords/koesplus_olala.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Oh Kasihan",
+    "chords": "/Chords/koesplus_ohkasihan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Oh Kau Tahu",
+    "chords": "/Chords/koesplus_ohkautahu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Pagi Yang Indah",
+    "chords": "/Chords/koesplus_pagi_yang_indah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Pelangi",
+    "chords": "/Chords/koesplus_pelangi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Rasa Hatiku",
+    "chords": "/Chords/koesplus_rasa_hatiku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Remaja ABCD",
+    "chords": "/Chords/koesplus_remajaabcd.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Tak Usah Kau Sesali",
+    "chords": "/Chords/koesplus_tak_usah_kau_sesali.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Terlambat",
+    "chords": "/Chords/koesplus_terlambat.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Termenung Lesu",
+    "chords": "/Chords/koesplus_termenung_lesu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Jangan Berulang Lagi",
+    "chords": "/Chords/koesplus_jangan_Berulang_lagi.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Tiba-tiba Kumenangis",
+    "chords": "/Chords/koesplus_tiba_menangis.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Koes Plus",
+    "song": "Why Do you Love Me",
+    "chords": "/Chords/koesplus_why_do_you.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Last Child",
+    "song": "Percayalah",
+    "chords": "/Chords/lastchild_percayalah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Lian Manurung",
+    "song": "Sai Anju Ma Ai",
+    "chords": "/Chords/lianmanurung_saianjumaau.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Lionel Richie",
+    "song": "Hello",
+    "chords": "/Chords/lionelrichie_hello.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Los Machucambos",
+    "song": "Pepito",
+    "chords": "/Chords/losmachucambos_pepito.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Mahalini",
+    "song": "Melawan Restu",
+    "chords": "/Chords/mahalini-melawan-restu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Mahalini",
+    "song": "Sisa Rasa",
+    "chords": "/Chords/mahalini-sisa-rasa.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Maher Zein",
+    "song": "Insyaallah",
+    "chords": "/Chords/maherzein_insyaallah.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Maher Zein",
+    "song": "Rahmatun Lil’Alameen",
+    "chords": "/Chords/maherzein-ramdatun-lil-alameen.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "M Mashabi",
+    "song": "Untuk Bungaku",
+    "chords": "/Chords/mashabi-untuk-bungaku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Mayumi Itsuwa",
+    "song": "Kokoronotomo",
+    "chords": "/Chords/mayumiitsowa_kokoronotomo.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Melky Goeslaw",
+    "song": "Pergi Untuk Kembali",
+    "chords": "/Chords/melky-goeslaw-pergi-untuk-kembali.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Metallica",
+    "song": "Nothing Else Matters",
+    "chords": "/Chords/metallica_nothing_else.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Michael Buble ft. Loren Allerd",
+    "song": "Help Me Make It Through The Night",
+    "chords": "/Chords/michael-buble-help-me-make-it-through-the-night.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Michael Buble",
+    "song": "Home",
+    "chords": "/Chords/michael-buble-home.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Michael Buble",
+    "song": "Sway",
+    "chords": "/Chords/michael-buble-sway.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "MLTR",
+    "song": "Sleeping Child",
+    "chords": "/Chords/mltr_sleeping_child.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Mr.Big",
+    "song": "Wild World",
+    "chords": "/Chords/mrbig_wildworld.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Muchsin Alatas",
+    "song": "Hilang Tak Berkesan",
+    "chords": "/Chords/muchsinalatas_hilangtakberkesan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Muchsin Alatas",
+    "song": "Kesunyian Jiwa",
+    "chords": "/Chords/muchsinalatas_kesunyianjiwa.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Muchsin Alatas",
+    "song": "Pasrah",
+    "chords": "/Chords/mucshinalatas_pasrah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Muchsin Alatas",
+    "song": "Renungkanlah",
+    "chords": "/Chords/muchsinalatas_renungkanlah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Murry's Group",
+    "song": "Papiku Mamiku",
+    "chords": "/Chords/murrysgroup_papikumamiku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Mus Mulyadi",
+    "song": "Rek Ayo Rek",
+    "chords": "/Chords/mus-mulyadi-rek-ayok-rek.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Naff",
+    "song": "Akhirnya Kumenemukanmu",
+    "chords": "/Chords/naff_akhirnya.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Naff",
+    "song": "Kenanglah Aku",
+    "chords": "/Chords/naff_kenanglahaku.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Naff",
+    "song": "Terendap Laraku",
+    "chords": "/Chords/naff-terendap-laraku.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Naif",
+    "song": "Bencinta Untuk Mencinta",
+    "chords": "/Chords/naif-benci-untuk-mencinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nanaku",
+    "song": "Sio Mama",
+    "chords": "/Chords/nanaku_siomama.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Nidji",
+    "song": "Biarlah",
+    "chords": "/Chords/nidji_biarlah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nidji",
+    "song": "Hapus Aku",
+    "chords": "/Chords/nidji_hapusaku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nike Ardilla",
+    "song": "Nike Ardilla - Bintang Kehidupan",
+    "chords": "/Chords/nike-ardilla-bintang-kehidupan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nirvana",
+    "song": "Come As You Are",
+    "chords": "/Chords/nirvana_comeasyouare.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nirvana",
+    "song": "Smells Like teen spirit",
+    "chords": "/Chords/nirvana_smellslike.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nirvana",
+    "song": "The Man Who Sold The World",
+    "chords": "/Chords/nirvana_theman.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Nisa Sabyan",
+    "song": "Deen Assalam",
+    "chords": "/Chords/nisasabyan_deenassalam.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Nisa Sabyan",
+    "song": "Ya Asyiqol",
+    "chords": "/Chords/nisasabyan_yaasyiqol.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Nisa Sabyan",
+    "song": "Ya Maulana",
+    "chords": "/Chords/nisasabyan_yamaulana.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "No Koes",
+    "song": "Layar Tancap",
+    "chords": "/Chords/nokoes_layartancap.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Dien Makmur",
+    "song": "Neng Geulis",
+    "chords": "/Chords/neng-geulis.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Neil Sedaka",
+    "song": "Oh! Carol",
+    "chords": "/Chords/neilsedaka_ohcarol.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ningsih",
+    "song": "Pemuda Idaman",
+    "chords": "/Chords/ningsih_pemudaidaman.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "No Name",
+    "song": "Ya Rasululla ( Cindai )",
+    "chords": "/Chords/yarasulullahversicindai.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "No Name",
+    "song": "Teluk Bayur",
+    "chords": "/Chords/blank",
+    "status": "Empty"
+  },
+  {
+    "artist": "No Name",
+    "song": "Tiga Malam",
+    "chords": "/Chords/blank",
+    "status": "Empty"
+  },
+  {
+    "artist": "No Name",
+    "song": "Cicak Rowo",
+    "chords": "/Chords/blank",
+    "status": "Empty"
+  },
+  {
+    "artist": "No Name",
+    "song": "Euis",
+    "chords": "/Chords/blank",
+    "status": "Empty"
+  },
+  {
+    "artist": "Oslan Husein",
+    "song": "Kambanglah Bungo ",
+    "chords": "/Chords/oslan-husein-kambanglah-bungo.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "No Name",
+    "song": "poco-Poco",
+    "chords": "/Chords/blank",
+    "status": "Empty"
+  },
+  {
+    "artist": "Noah",
+    "song": "Andaikan Kau Datang",
+    "chords": "/Chords/noah-andaikan-kau-datang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Noah",
+    "song": "Cinta Bukan Dusta",
+    "chords": "/Chords/noah_cintabukandusta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Noah",
+    "song": "Kupu-Kupu Malam",
+    "chords": "/Chords/noah-kupu-kupu-malam.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Noah",
+    "song": "Separuh Aku",
+    "chords": "/Chords/noah_separuhaku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Noah",
+    "song": "Seperti Kemarin",
+    "chords": "/Chords/noah_sepertikemarin.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Noah",
+    "song": "Tak Lagi Sama",
+    "chords": "/Chords/noah_taklagisama.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Novia Kolopaking",
+    "song": "Dengan Menyebut Nama Allah",
+    "chords": "/Chords/noviakolopaking_denganmenyebut.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Nyong Franco",
+    "song": "Gemu Fa Mi Re",
+    "chords": "/Chords/Nyong-Franco-Gemu-Fa-Mi-Re.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Oasis",
+    "song": "Don't Look Back In Anger",
+    "chords": "/Chords/oasis_dontlookback.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Once",
+    "song": "Symphoni Yang Indah",
+    "chords": "/Chords/once-symphoni-yang-indah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Opick",
+    "song": "Bila Waktu Tlah Berakhir",
+    "chords": "/Chords/opick_bilawaktu.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Opick",
+    "song": "Dealova",
+    "chords": "/Chords/opick_dealova.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Opick",
+    "song": "Rapuh",
+    "chords": "/Chords/opick_rapuh.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Padi",
+    "song": "Begitu Indah",
+    "chords": "/Chords/padi_begituindah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Padi",
+    "song": "Menanti Sebuah Jawaban",
+    "chords": "/Chords/padi_menantisebuah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Padi",
+    "song": "Semua Tak Sama",
+    "chords": "/Chords/padi_semuataksama.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Padi",
+    "song": "Sesuatu Yang Indah",
+    "chords": "/Chords/padi_sesuatuyangindah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Panbers",
+    "song": "Akhir Cinta",
+    "chords": "/Chords/panbers_akhircinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Panbers",
+    "song": "Cinta Dan Permata",
+    "chords": "/Chords/panbers_cintadanpermata.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Panbers",
+    "song": "Hidup Terkekang",
+    "chords": "/Chords/panbers_hidupterkekang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Panbers",
+    "song": "Pilu",
+    "chords": "/Chords/panbers_pilu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Panbers",
+    "song": "Tak Kusangka",
+    "chords": "/Chords/panbers_takkusangka.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Panbers",
+    "song": "Terlambat Sudah",
+    "chords": "/Chords/panbers_terlambatsudah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Pance",
+    "song": "Demi Kau Dan Si Buah Hati",
+    "chords": "/Chords/pance_demikau.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Pance",
+    "song": "Kucari Jalan Terbaik",
+    "chords": "/Chords/pance_kucarijalan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Ada Apa Denganmu",
+    "chords": "/Chords/peterpan_adapadenganmu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Bintang Di Surga",
+    "chords": "/Chords/peterpan_bintangdisurga.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Menunggumu",
+    "chords": "/Chords/peterpan_menunggumu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Mimpi Yang Sempurna",
+    "chords": "/Chords/peterpan_mimpiyangsempurna.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Mungkin Nanti",
+    "chords": "/Chords/peterpan_mungkinnanti.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Semua Tentang Kita",
+    "chords": "/Chords/peterpan_semuatentang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Walau Habis Terang",
+    "chords": "/Chords/peterpan-walau-habis-terang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peterpan",
+    "song": "Yang Terdalam",
+    "chords": "/Chords/peterpan-yang-terdalam.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Peter Maffay",
+    "song": "Du",
+    "chords": "/Chords/petermaffay_du.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Projector",
+    "song": "Sudah Kutahu",
+    "chords": "/Chords/projector_sudahkutahu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Radiohead",
+    "song": "Creep",
+    "chords": "/Chords/radiohead-creep.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Radja",
+    "song": "Jujur",
+    "chords": "/Chords/radja_jujur.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Radja",
+    "song": "Yakin",
+    "chords": "/Chords/radja-yakin.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Raim Laode",
+    "song": "Komang",
+    "chords": "/Chords/raim-laode-komang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "RAN",
+    "song": "Pandangan Pertama",
+    "chords": "/Chords/ran-pandangan-pertama.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Rani",
+    "song": "Setangkai Anggrek Bulan",
+    "chords": "/Chords/rani_setangkaianggrekbulan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ratih Purwasih",
+    "song": "Kau Tercipta Bukan Untukku",
+    "chords": "/Chords/ratih-purwasih-kau-tercipta-bukan-untukku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Reza Artamevia",
+    "song": "Berharap Tak Berpisah",
+    "chords": "/Chords/reza-artamevia-berharap-tak-berpisah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Rhoma Irama",
+    "song": "Perjuangan Dan Doa",
+    "chords": "/Chords/rhomairama_perjuangandandoa.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Rhoma Irama",
+    "song": "Terajana",
+    "chords": "/Chords/rhomairama_terajana.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Rod Stewart",
+    "song": "Have I Told You Lately",
+    "chords": "/Chords/rodstewart_haveitoldyou.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Rod Stewart",
+    "song": "Have You Ever Seen The Rain",
+    "chords": "/Chords/rodstewart_haveyouever.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Rod Stewart",
+    "song": "I Don't Want To Talk About It",
+    "chords": "/Chords/rod-stewart-i-dont-want-to-talk-about-it.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Rony Parulian dan Andi Rianto",
+    "song": " Sepenuh Hati",
+    "chords": "/Chords/rony-parulian-sepenuh-hati.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Rossa",
+    "song": "Takkan Berpaling Dari-Mu",
+    "chords": "/Chords/rossa_takkanberpaling.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Ruth Sahanaya",
+    "song": "Kaulah Segalanya",
+    "chords": "/Chords/ruthsahanaya_kaulahsegalanya.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Samsons",
+    "song": "Akhir Rasa Ini",
+    "chords": "/Chords/samsons-akhir-rasa-ini.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Samsons",
+    "song": "Di Ujung Jalan",
+    "chords": "/Chords/samsons-diujung-jalan.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Samsons",
+    "song": "Kenangan Terindah",
+    "chords": "/Chords/samsons_kenanganterindah.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Santana",
+    "song": "Corazon Espinado",
+    "chords": "/Chords/santana_corazon.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Santana",
+    "song": "Smooth",
+    "chords": "/Chords/santana_smooth.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Scorpions",
+    "song": "Always Somewhere",
+    "chords": "/Chords/scorpions_alwayssomewhere.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Scorpions",
+    "song": "Still Loving You",
+    "chords": "/Chords/scorpions_stilllovingyou.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Scorpions",
+    "song": "When The Smoke Is Going Down",
+    "chords": "/Chords/scorpions_whenthesmoke.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Seventeen",
+    "song": "Hal Terindah",
+    "chords": "/Chords/seventeen_halterindah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Seventeen",
+    "song": "Jaga Slalu Hatimu",
+    "chords": "/Chords/seventeen_jagaslaluhatimu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Seventeen",
+    "song": "Kemarin",
+    "chords": "/Chords/seventeen_kemarin.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Seventeen",
+    "song": "Menemukanmu",
+    "chords": "/Chords/seventeen_menemukanmu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Seventeen",
+    "song": "Ramadhan Yang Indah",
+    "chords": "/Chords/seventeen_ramadhanyangindah.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Sheila On 7",
+    "song": "Dan",
+    "chords": "/Chords/sheilaon7_dan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Sheila On 7",
+    "song": "Kita",
+    "chords": "/Chords/sheilaon7_kita.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Sheila On 7",
+    "song": "Pejantan Tangguh",
+    "chords": "/Chords/sheilaon7_pejantantangguh.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Sheila On 7",
+    "song": "Seberapa Pantas",
+    "chords": "/Chords/sheilaon7_seberapapantas.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Siti Nordiana & Achik",
+    "song": "Memori Berkasih",
+    "chords": "/Chords/siti-nordiana-achik-memori-berkasih.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Slank",
+    "song": "Ku Tak Bisa",
+    "chords": "/Chords/slank_kutakbisa.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Slank",
+    "song": "Virus",
+    "chords": "/Chords/slank_virus.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "ST 12",
+    "song": "Jangan Pernah Berubah",
+    "chords": "/Chords/st12_janganpernah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "ST 12",
+    "song": "KebesaranMu",
+    "chords": "/Chords/st12_kebesaranmu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "ST 12",
+    "song": "Kepingan Hati",
+    "chords": "/Chords/st12_kepinganhati.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "ST 12",
+    "song": "Rasa Yang Tertinggal",
+    "chords": "/Chords/st12_rasayangtertinggal.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "ST 12",
+    "song": "Saat Terakhir",
+    "chords": "/Chords/st12-saat-terakhir.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Steelheart",
+    "song": "She’s Gone",
+    "chords": "/Chords/steelheart_shesgone.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Stinky",
+    "song": "Mungkinkah",
+    "chords": "/Chords/stinky -mungkinkah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Tantowi Yahya",
+    "song": "Polo Pakita",
+    "chords": "/Chords/tantowi-yahya-polo-pakita.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Tantowi Yahya",
+    "song": "Sebiduk Ditepi Sungai Musi",
+    "chords": "/Chords/tantowiyahya_sebiduk.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Tetty Kadi",
+    "song": "Sepanjang Jalan Kenangan",
+    "chords": "/Chords/tettykadi_sepanjangjalan.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "And I Love Her",
+    "chords": "/Chords/thebeatles_andiloveher.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Can't Buy Me Love",
+    "chords": "/Chords/thebeatles_cantbuymelove.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Come Together",
+    "chords": "/Chords/thebeatles_cometogether.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Day Tripper",
+    "chords": "/Chords/thebeatles_daytripper.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Don't Let Me Down",
+    "chords": "/Chords/thebeatles_dontletmedown.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Drive My Car",
+    "chords": "/Chords/thebeatles_drivemycar.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Here, There and Everywhere",
+    "chords": "/Chords/thebeatles-here-there-and-everywhere.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Hey Jude",
+    "chords": "/Chords/thebeatles_heyjude.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "I Feel Fine",
+    "chords": "/Chords/thebeatles_ifeelfine.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "I Saw Her Standing There",
+    "chords": "/Chords/thebeatles_isawher.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "I Should Known Better",
+    "chords": "/Chords/thebeatles_ishouldknown.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Let It Be",
+    "chords": "/Chords/thebeatles_leititbe.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Michelle",
+    "chords": "/Chords/thebeatles_michelle.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "My Bonnie",
+    "chords": "/Chords/thebeatles_mybonnie.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Norwegian Wood",
+    "chords": "/Chords/thebeatles_norwegianwood.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Ob-La-Di, Ob-La-Da",
+    "chords": "/Chords/thebeatles_obladioblada.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Oh! Darling",
+    "chords": "/Chords/thebeatles_ohdarling.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Something",
+    "chords": "/Chords/thebeatles_something.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Ticket To Ride",
+    "chords": "/Chords/thebeatles_tickettoride.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Beatles",
+    "song": "Till There Was You",
+    "chords": "/Chords/thebeatles_tilltherewasyou.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Ayah",
+    "chords": "/Chords/themercys_ayah.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Biarku Sendiri",
+    "chords": "/Chords/themercys_biarkusendiri.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Bunga Mawar",
+    "chords": "/Chords/themercys_bungamawar.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Dalam Kerinduan",
+    "chords": "/Chords/themercys_dalamkerinduan.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Hidupku Sunyi",
+    "chords": "/Chords/themercys_hidupkusunyi.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Jauh Di Sayang",
+    "chords": "/Chords/the-mercys-jauh-di-sayang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Pergi Tanpa Berita",
+    "chords": "/Chords/themercys_pergitanpaberita.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Seorang Pramuria",
+    "chords": "/Chords/themercys_kisangseorang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Tiada Lagi",
+    "chords": "/Chords/themercys_tiadalagi.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Mercy’s",
+    "song": "Usah Kau Harap",
+    "chords": "/Chords/themercys_usahkauharap.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "The Rock",
+    "song": "Munajat Cinta",
+    "chords": "/Chords/therock_munajatcinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "The Rollies",
+    "song": "Kau Yang Kusayang",
+    "chords": "/Chords/therollies-kau-yang-kusayang.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Titiek Sandhora",
+    "song": "Mustika",
+    "chords": "/Chords/titiek-sandhora-mustika.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Tommy J Pisa",
+    "song": "Dibatas Kota Ini",
+    "chords": "/Chords/tommy-j-pisa-dibatas-kota-ini.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Tommy J Pisa",
+    "song": "Disini Dibatas Kota Ini",
+    "chords": "/Chords/tommy-j-pisa-disini-dibatas-kota-ini.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Trio Elexis",
+    "song": "Jangan Salah Menilai",
+    "chords": "/Chords/trio-elexis-jangan-salah-menilai.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Trio Elexis",
+    "song": "Anggur Merah 2",
+    "chords": "/Chords/trio-elexis-anggur-merah2.html",
+    "status": "Empty"
+  },
+  {
+    "artist": "Uje",
+    "song": "Sepohon Kayu",
+    "chords": "/Chords/uje_sepohonkayu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Uje",
+    "song": "Bidadari Surga",
+    "chords": "/Chords/uje_bidadarisurga.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Andai Kutahu",
+    "chords": "/Chords/ungu_andaikutahu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Bila Tiba",
+    "chords": "/Chords/ungu_bilatiba.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Cinta Dalam Hati",
+    "chords": "/Chords/ungu_cintadalamhati.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Demi Waktu",
+    "chords": "/Chords/ungu_demiwaktu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Dengan Nafasmu",
+    "chords": "/Chords/ungu_dengannafasmu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Hampa Hatiku",
+    "chords": "/Chords/ungu-hampa-hatiku.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Luka Disini",
+    "chords": "/Chords/ungu_lukadisini.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Sayang",
+    "chords": "/Chords/ungu_sayang.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Seperti Yang Dulu",
+    "chords": "/Chords/ungu_sepertiyangdulu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Sesungguhnya",
+    "chords": "/Chords/ungu_sesungguhnya.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Surgamu",
+    "chords": "/Chords/ungu_surgamu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Ungu",
+    "song": "Untukmu Selamanya",
+    "chords": "/Chords/ungu_untukmuselamanya.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Utopia",
+    "song": "Mencintaimu Sampai Mati",
+    "chords": "/Chords/utopia_mencintaimu.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Vanny Vabiola",
+    "song": "Disini Dibatas Kota Ini",
+    "chords": "/Chords/vanny-vabiola-disini-dibatas-kota-ini.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Vanny Vabiola",
+    "song": "Dibatas Kota Ini",
+    "chords": "/Chords/vanny-vabiola-dibatas-kota-ini.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Victor Hutabarat",
+    "song": "O Tano Batak",
+    "chords": "/Chords/victorhut_otanobatak.html ",
+    "status": "Ready"
+  },
+  {
+    "artist": "Virgoun",
+    "song": "Surat Cinta Untuk Starla",
+    "chords": "/Chords/virgoun_suratcinta.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Virgoun",
+    "song": "Bukti",
+    "chords": "/Chords/virgoun-bukti.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Wali",
+    "song": "Yank",
+    "chords": "/Chords/wali_yank.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "White Lion",
+    "song": "Till Death Do Us Part",
+    "chords": "/Chords/whitelion_tilldeath.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "White Lion",
+    "song": "You're All I Need",
+    "chords": "/Chords/whitelion_youreallineed.html ",
+    "status": "Empty"
+  },
+  {
+    "artist": "Zivilia",
+    "song": "Pintu Taubat",
+    "chords": "/Chords/zivilia_pintutaubat.html ",
+    "status": "Ready"
+  }
+]
