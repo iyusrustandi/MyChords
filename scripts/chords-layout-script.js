@@ -1,3 +1,13 @@
+// ==========================Navbar & Footer=====================================
+
+$.get('/components/transposebutton.html')
+  .done(function (data) {
+    $('#transposebutton').replaceWith(data);
+  })
+  .fail(function () {
+    console.error('Failed to load transposebutton.html');
+  });
+
 // ==========================Chord Modal=====================================
 $(document).ready(function () {
   // Load modal chord

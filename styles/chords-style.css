@@ -16,23 +16,10 @@ body {
   padding: 0;
 }
 
-a {
-  text-decoration: none;
-}
-
-#nav-placeholder,
-#footer-placeholder {
-  width: 100%;
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
 /* ======================lyrics======================= */
 
 h2 {
-  font-size: clamp(18px, 3vw, 36px);
+  font-size: 18px;
   padding: 10px;
   color: #fff;
   text-align: center;
@@ -44,8 +31,8 @@ h2 {
   font-style: normal;
   line-height: 1.5;
   white-space: pre-wrap;
-  max-width: 90%;
-  margin: 0;
+  max-width: 50%;
+  margin: auto;
   padding: 15px;
   background: #f9f9f9;
   border-radius: 8px;
@@ -58,7 +45,7 @@ h2 {
 }
 
 .reff {
-  font-size: clamp(12px, 1.2vw, 18px);
+  font-size: 14px;
   margin: 15px 0;
   position: relative;
   left: 15px;
@@ -71,7 +58,7 @@ h2 {
   font-weight: bold;
   padding: 2px 2px;
   border-radius: 4px;
-  font-size: clamp(12px, 1.2vw, 18px);
+  font-size: 14px;
 }
 
 .button-container {
@@ -88,13 +75,13 @@ h2 {
 }
 
 .button-container .button-text {
-  font-size: clamp(14px, 2vw, 18px);
+  font-size: 16px;
   font-weight: bold;
 }
 
 .button-container button {
   padding: 10px 15px;
-  font-size: clamp(12px, 1.5vw, 16px);
+  font-size: 16px;
   font-weight: bold;
   border: none;
   border-radius: 8px;
@@ -121,7 +108,7 @@ h2 {
 }
 
 .section-title {
-  font-size: 1.2em;
+  font-size: 14px;
   font-weight: bold;
   margin: 10px 0;
 }
@@ -232,11 +219,11 @@ h2 {
   }
 
   .button-container .button-text {
-    font-size: 3.5vw;
+    font-size: 12px;
   }
 
   .button-container button {
-    font-size: 3vw;
+    font-size: 12px;
     width: 100%;
   }
 

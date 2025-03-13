@@ -1,0 +1,58 @@
+<!-- chords-layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyChords</title>
+    <link href="/images/logo2.png" rel="icon" />
+    <link rel="stylesheet" href="/styles/chords-style.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/footer.css" />
+    <script src="/js/jquery-3.7.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Main Content -->
+    <main role="main">
+      <!-- Chords Container -->
+      <section class="lyric-container">
+        <h2 id="chord-title">Loading...</h2>
+
+        <!-- Tombol Transpose -->
+        <div id="transpose-container" class="hidden button-container">
+          <button class="decrement-button" onclick="transposeChords(-1)">➖</button>
+          <span class="button-text">Transpose</span>
+          <button class="increment-button" onclick="transposeChords(1)">➕</button>
+        </div>
+
+        <div id="modal-placeholder"></div>
+
+        <!-- Animasi Loading -->
+        <div id="loading" class="loading-container">
+          <div class="spinner"></div>
+        </div>
+
+        <!-- Chords Content -->
+        <div id="chord-content" aria-live="polite" class="hidden">
+          <p>Loading chords...</p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <script src="/scripts/chords-layout-script.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="/scripts/fetchcomponents.js"></script>
+    <script src="/scripts/loadChords.js"></script>
+    <script src="/scripts/transposeChords.js"></script>
+  </body>
+</html>

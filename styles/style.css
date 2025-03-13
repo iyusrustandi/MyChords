@@ -1,0 +1,55 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../images/background.png');
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Menggunakan tinggi penuh viewport */
+}
+
+#search-input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  text-align: center; /* Agar teks di dalam input berada di tengah */
+}
+
+/* Untuk layar kecil, berikan sedikit padding agar tidak menempel ke tepi */
+@media (max-width: 600px) {
+  .search-container {
+    padding: 0 20px;
+  }
+}
+
+#song-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.song-item a {
+  display: block;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.song-item a:hover {
+  background-color: #555;
+}
