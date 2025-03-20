@@ -1,55 +1,102 @@
 /* style.css */
 body {
-  font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   background-image: url('../images/background.png');
-  min-height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.search-container {
+  color: #fff;
+  margin: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh; /* Menggunakan tinggi penuh viewport */
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+/* --- Navbar & Footer Placeholder --- */
+#nav-placeholder,
+#footer-placeholder {
+  width: 100%;
+  margin: auto;
+}
+
+/* --- Section Song List --- */
+.songlist {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  align-items: center;
+}
+
+/* --- Search Input --- */
 #search-input {
   width: 100%;
-  max-width: 400px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  max-width: 500px;
+  padding: 12px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
   font-size: 1rem;
-  text-align: center; /* Agar teks di dalam input berada di tengah */
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  transition: 0.3s;
 }
 
-/* Untuk layar kecil, berikan sedikit padding agar tidak menempel ke tepi */
-@media (max-width: 600px) {
-  .search-container {
-    padding: 0 20px;
-  }
+#search-input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
 }
 
+#search-input:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-color: #fff;
+}
+
+/* --- Song List --- */
 #song-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 20px;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.song-item {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  transition: background 0.3s, transform 0.2s;
 }
 
 .song-item a {
   display: block;
-  background-color: #333;
   color: #fff;
-  padding: 12px 15px;
-  border-radius: 5px;
   text-decoration: none;
   font-size: 1rem;
-  transition: background 0.3s;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 
-.song-item a:hover {
-  background-color: #555;
+.song-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+/* --- Responsiveness --- */
+@media (max-width: 600px) {
+  .songlist {
+    padding: 10px;
+  }
+
+  #search-input {
+    max-width: 100%;
+  }
+
+  #song-list {
+    padding: 10px;
+  }
 }

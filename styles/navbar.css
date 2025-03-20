@@ -1,3 +1,4 @@
+/* navbar.css */
 h1 {
   margin: 20px 0;
   color: #fff;
@@ -15,9 +16,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   margin: auto;
-  width: 90%;
-  height: 65px;
-  border-radius: 0 0 15px 15px;
+  height: 50px;
   padding: 0 25px;
   z-index: 2;
   background: #fff;
@@ -30,8 +29,15 @@ h1 {
   align-items: center;
 }
 
-.logo {
+/* .logo {
   height: 40px;
+} */
+
+.logo {
+  font-size: 18pt;
+  font-weight: bold;
+  text-decoration: none;
+  color: #111;
 }
 
 .nav-tabs {
@@ -64,7 +70,7 @@ h1 {
   display: none;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
   .nav-container {
     position: fixed;
     display: none;
