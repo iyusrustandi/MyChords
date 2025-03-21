@@ -110,6 +110,8 @@ h2 {
 .section-title {
   font-size: 14px;
   font-weight: bold;
+  display: block;
+  margin: -25px 0 0 0;
 }
 
 /* Modal Style */
@@ -145,7 +147,7 @@ h2 {
   position: absolute;
   top: 5px;
   right: 10px;
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
   cursor: pointer;
   color: #f44336;
@@ -207,6 +209,7 @@ h2 {
 
   .section-title {
     font-size: 12.5px;
+    margin: -20px 0 -20px 0;
   }
 
   .chord {

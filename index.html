@@ -1,27 +1,51 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MyChords</title>
+    <title>MyChords - Chord & Lirik Lagu</title>
     <link href="/images/logo5.png" rel="icon" />
-    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/footer.css" />
-    <script src="/scripts/jquery-3.7.0.min.js"></script>
+    <meta name="description" content="Temukan lirik dan chord gitar lagu favorit Anda di MyChords. Mudah, cepat, dan gratis!" />
+    <meta name="keywords" content="chord gitar, lirik lagu, kunci gitar, lagu terbaru, MyChords" />
+    <meta name="author" content="MyChords Team" />
+    <meta property="og:title" content="MyChords - Chord & Lirik Lagu" />
+    <meta property="og:description" content="Temukan lirik dan chord gitar lagu favorit Anda di MyChords." />
+    <meta property="og:image" content="/images/logo5.png" />
+    <meta property="og:url" content="https://mychords.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <script defer src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script defer src="/scripts/fetchcomponents.js"></script>
+    <script defer src="/scripts/fetchapi.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "MyChords",
+        "url": "https://mychords.verce.app",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://mychords.verce.app/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
   </head>
   <body>
     <div id="nav-placeholder"></div>
-
-    <section class="songlist">
-      <input type="text" id="search-input" placeholder="Search Artist or Song..." oninput="filterSongs()" />
-      <div id="song-list"></div>
-    </section>
+    <main>
+      <section class="songlist">
+        <h1>Temukan Chord & Lirik Lagu Favoritmu</h1>
+        <p>Jelajahi database lagu terbaru dan mainkan dengan mudah.</p>
+        <input type="text" id="search-input" placeholder="Cari artis atau lagu..." />
+        <div id="song-list"></div>
+      </section>
+    </main>
     <div id="footer-placeholder"></div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="/scripts/fetchcomponents.js"></script>
-    <script src="/scripts/fetchapi.js"></script>
   </body>
 </html>
