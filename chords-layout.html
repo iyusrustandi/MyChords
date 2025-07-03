@@ -1,19 +1,31 @@
-<!-- chords-layout.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="page-title">Chords Viewer</title>
+    <title id="page-title">Chord dan Lirik Lagu</title>
+
+    <!-- Meta SEO -->
+    <meta name="description" content="Chord dan lirik lagu terbaik untuk gitar. Temukan chord lagu favoritmu dan mainkan dengan mudah." />
+    <link rel="canonical" href="https://mychords.com/chords-layout.html" />
+
+    <!-- Open Graph (untuk sosial media) -->
+    <meta property="og:title" content="Chord dan Lirik Lagu" />
+    <meta property="og:description" content="Mainkan chord lagu favoritmu dengan lengkap dan mudah. Cocok untuk gitaris pemula maupun lanjutan." />
+    <meta property="og:type" content="music.song" />
+    <meta property="og:image" content="https://mychords.com/images/og-thumbnail.jpg" />
+    <meta property="og:url" content="https://mychords.com/chords-layout.html" />
+
+    <!-- Favicon & Fonts -->
     <link href="/images/logo5.png" rel="icon" />
-    <link rel="stylesheet" type="text/css" href="/styles/chords-style.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="/styles/footer.css" />
-    <script src="/scripts/jquery-3.7.0.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/styles/chords-style.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
   </head>
   <body>
     <!-- Navbar -->
@@ -21,79 +33,85 @@
 
     <!-- Main Content -->
     <main role="main">
-      <!-- Chords Container -->
       <section class="lyric-container">
-        <h2 id="chord-title">Loading...</h2>
+        <h1 id="chord-title">Loading...</h1>
         <div id="transposebutton"></div>
         <div id="modal-placeholder"></div>
 
-        <!-- Animasi Loading -->
+        <!-- Spinner -->
         <div id="loading" class="loading-container">
           <div class="spinner"></div>
         </div>
 
-        <!-- Chords Content -->
-        <div id="chord-content" aria-live="polite" class="hidden">
-          <p>Loading chords...</p>
-        </div>
+        <!-- Chord Content Area -->
+        <article id="chord-content" aria-live="polite" class="hidden">
+          <p>Memuat chord...</p>
+        </article>
       </section>
     </main>
 
     <!-- Footer -->
     <div id="footer-placeholder"></div>
 
-    <script src="/scripts/chords-layout-script.js"></script>
+    <!-- Script -->
+    <script src="/scripts/jquery-3.7.0.min.js"></script>
     <script src="/scripts/fetchcomponents.js"></script>
+    <script src="/scripts/chords-layout-script.js"></script>
+
+    <!-- Dynamic Meta & Title via JS -->
     <script>
       $(document).ready(function () {
         const urlParams = new URLSearchParams(window.location.search);
         const artist = urlParams.get('artist');
         const song = urlParams.get('song');
-        const chordFile = urlParams.get('chords'); // Konsisten dengan parameter 'chords'
+        const chordFile = urlParams.get('chords');
         const cleanChordFile = chordFile ? chordFile.trim() : null;
 
-        // Set head title
-        if (artist && song) {
-          $('#page-title').text(`${artist} - ${song}`);
-          $('#chord-title').text(`${artist} - ${song}`);
-        } else {
-          $('#page-title').text('Chords Viewer');
-          $('#chord-title').text('Chords Viewer');
-        }
+        const titleText = artist && song ? `Chord dan Lirik Lagu ${song} - ${artist}` : 'Chord dan Lirik Lagu';
 
-        // Load chords content
+        // Set Judul Halaman
+        $('#page-title').text(titleText);
+        $('#chord-title').text(titleText);
+        document.title = titleText;
+
+        // Set Meta Description Dinamis
+        const metaDescription = `Chord dan lirik lagu ${song} oleh ${artist}. Mainkan dan nyanyikan lagu favoritmu lengkap di MyChords.`;
+        $('head').append(`<meta name="description" content="${metaDescription}">`);
+
+        // Set Canonical URL
+        const canonicalUrl = `https://mychords.com/chords-layout.html?artist=${encodeURIComponent(artist)}&song=${encodeURIComponent(song)}`;
+        $('head').append(`<link rel="canonical" href="${canonicalUrl}" />`);
+
+        // Load Konten Chord
         if (cleanChordFile) {
           $.ajax({
             url: cleanChordFile,
             method: 'GET',
             dataType: 'html',
             beforeSend: function () {
-              $('#loading').removeClass('hidden'); // Tampilkan animasi loading
-              $('#chord-content').addClass('hidden'); // Sembunyikan konten sebelum data dimuat
+              $('#loading').removeClass('hidden');
+              $('#chord-content').addClass('hidden');
             },
             success: function (data) {
               $('#chord-content').html(data);
-              $('#loading').addClass('hidden'); // Sembunyikan animasi loading
-              $('#chord-content').removeClass('hidden'); // Tampilkan konten
+              $('#loading').addClass('hidden');
+              $('#chord-content').removeClass('hidden');
             },
             error: function (jqXHR, textStatus, errorThrown) {
-              console.error('Failed to load chords:', cleanChordFile, textStatus, errorThrown);
               $('#chord-content').html(`
                 <p style="color: red;">
-                  Failed to load chords file.<br>
+                  Gagal memuat file chord.<br>
                   <strong>File:</strong> ${cleanChordFile}<br>
                   <strong>Status:</strong> ${jqXHR.status} (${textStatus})
-                </p>
-              `);
-              $('#loading').addClass('hidden'); // Sembunyikan animasi loading
-              $('#chord-content').removeClass('hidden'); // Tampilkan pesan error
+                </p>`);
+              $('#loading').addClass('hidden');
+              $('#chord-content').removeClass('hidden');
             },
           });
         } else {
-          console.error('Chords file URL is missing.');
-          $('#chord-content').html('<p>No chords file specified.</p>');
-          $('#loading').addClass('hidden'); // Sembunyikan animasi loading
-          $('#chord-content').removeClass('hidden'); // Tampilkan pesan error
+          $('#chord-content').html('<p>File chord tidak tersedia.</p>');
+          $('#loading').addClass('hidden');
+          $('#chord-content').removeClass('hidden');
         }
       });
     </script>
