@@ -1,41 +1,13 @@
-$(document).ready(function () {
-  let songData = [];
-  let pageSize = 25;
-  let currentPage = 1;
+let songData = [];
+let pageSize = 25;
+let currentPage = 1;
 
-  // Load data dari JSON
+$(document).ready(function () {
   $.getJSON('/api/data.json', function (data) {
     songData = data;
     updateSongList();
     renderPagination();
   });
-
-  function updateSongList() {
-    const searchInput = $('#search-input').val().toLowerCase();
-    const filteredData = songData.filter((item) => item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput));
-
-    const startIndex = (currentPage - 1) * pageSize;
-    const paginatedData = filteredData.slice(startIndex, startIndex + pageSize);
-
-    const songList = $('#song-list');
-    songList.empty();
-
-    paginatedData.forEach((item) => {
-      const songItem = $('<div>').addClass('song-item');
-
-      // Link menuju halaman chords-layout.html dengan parameter
-      const songLink = $('<a>')
-        .attr({
-          href: `chords-layout.html?artist=${encodeURIComponent(item.artist)}&song=${encodeURIComponent(item.song)}&chords=${encodeURIComponent((item.chords || '').trim())}`,
-          target: '_blank', // Buka di tab baru
-          rel: 'noopener noreferrer', // Keamanan tambahan
-        })
-        .text(`${item.artist} - ${item.song}`);
-
-      songItem.append(songLink);
-      songList.append(songItem);
-    });
-  }
 
   $('#search-input').on('input', function () {
     currentPage = 1;
@@ -43,3 +15,68 @@ $(document).ready(function () {
     renderPagination();
   });
 });
+
+// Ini boleh di luar document.ready karena pakai variabel global
+function updateSongList() {
+  const searchInput = $('#search-input').val().toLowerCase();
+  const filteredData = songData.filter((item) => item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput));
+
+  const startIndex = (currentPage - 1) * pageSize;
+  const paginatedData = filteredData.slice(startIndex, startIndex + pageSize);
+
+  const songList = $('#song-list');
+  songList.empty();
+
+  paginatedData.forEach((item) => {
+    const songItem = $('<div>').addClass('song-item');
+
+    const songLink = $('<a>')
+      .attr({
+        href: `chords-layout.html?artist=${encodeURIComponent(item.artist)}&song=${encodeURIComponent(item.song)}&chords=${encodeURIComponent((item.chords || '').trim())}`,
+        target: '_blank',
+        rel: 'noopener noreferrer',
+      })
+      .text(`${item.artist} - ${item.song}`);
+
+    songItem.append(songLink);
+    songList.append(songItem);
+  });
+}
+
+function renderPagination() {
+  const searchInput = $('#search-input').val().toLowerCase();
+  const filteredData = songData.filter((item) => item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput));
+
+  const totalPages = Math.ceil(filteredData.length / pageSize);
+  const paginationContainer = $('#pagination');
+  paginationContainer.empty();
+
+  if (totalPages <= 1) return;
+
+  const prevBtn = $('<button>')
+    .text('Previous')
+    .prop('disabled', currentPage === 1);
+  const nextBtn = $('<button>')
+    .text('Next')
+    .prop('disabled', currentPage === totalPages);
+
+  prevBtn.on('click', function () {
+    if (currentPage > 1) {
+      currentPage--;
+      updateSongList();
+      renderPagination();
+    }
+  });
+
+  nextBtn.on('click', function () {
+    if (currentPage < totalPages) {
+      currentPage++;
+      updateSongList();
+      renderPagination();
+    }
+  });
+
+  paginationContainer.append(prevBtn);
+  paginationContainer.append($('<span>').text(` Page ${currentPage} of ${totalPages} `));
+  paginationContainer.append(nextBtn);
+}
