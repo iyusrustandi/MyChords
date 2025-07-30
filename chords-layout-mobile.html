@@ -1,0 +1,94 @@
+<!-- chords-layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title id="page-title">Chords Viewer</title>
+    <link href="https://mychords.vercel.app/images/logo5.png" rel="icon" />
+    <link rel="stylesheet" type="text/css" href="https://mychords.vercel.app/styles/chords-style.css" />
+    <link rel="stylesheet" type="text/css" href="https://mychords.vercel.app/styles/navbar.css" />
+    <link rel="stylesheet" type="text/css" href="https://mychords.vercel.app/styles/footer.css" />
+    <script src="https://mychords.vercel.app/scripts/jquery-3.7.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main role="main">
+      <!-- Chords Container -->
+      <section class="lyric-container">
+        <div id="transposebutton"></div>
+        <div id="modal-placeholder"></div>
+
+        <!-- Animasi Loading -->
+        <div id="loading" class="loading-container">
+          <div class="spinner"></div>
+        </div>
+
+        <!-- Chords Content -->
+        <div id="chord-content" aria-live="polite" class="hidden">
+          <p>Loading chords...</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://mychords.vercel.app/scripts/chords-layout-script.js"></script>
+    <script src="https://mychords.vercel.app/scripts/fetchcomponents.js"></script>
+    <script>
+      $(document).ready(function () {
+        const urlParams = new URLSearchParams(window.location.search);
+        const artist = urlParams.get('artist');
+        const song = urlParams.get('song');
+        const chordFile = urlParams.get('chords'); // Konsisten dengan parameter 'chords'
+        const cleanChordFile = chordFile ? chordFile.trim() : null;
+
+        // Set head title
+        if (artist && song) {
+          $('#page-title').text(`${artist} - ${song}`);
+          $('#chord-title').text(`${artist} - ${song}`);
+        } else {
+          $('#page-title').text('Chords Viewer');
+          $('#chord-title').text('Chords Viewer');
+        }
+
+        // Load chords content
+        if (cleanChordFile) {
+          $.ajax({
+            url: cleanChordFile,
+            method: 'GET',
+            dataType: 'html',
+            beforeSend: function () {
+              $('#loading').removeClass('hidden'); // Tampilkan animasi loading
+              $('#chord-content').addClass('hidden'); // Sembunyikan konten sebelum data dimuat
+            },
+            success: function (data) {
+              $('#chord-content').html(data);
+              $('#loading').addClass('hidden'); // Sembunyikan animasi loading
+              $('#chord-content').removeClass('hidden'); // Tampilkan konten
+            },
+            error: function (jqXHR, textStatus, errorThrown) {
+              console.error('Failed to load chords:', cleanChordFile, textStatus, errorThrown);
+              $('#chord-content').html(`
+                <p style="color: red;">
+                  Failed to load chords file.<br>
+                  <strong>File:</strong> ${cleanChordFile}<br>
+                  <strong>Status:</strong> ${jqXHR.status} (${textStatus})
+                </p>
+              `);
+              $('#loading').addClass('hidden'); // Sembunyikan animasi loading
+              $('#chord-content').removeClass('hidden'); // Tampilkan pesan error
+            },
+          });
+        } else {
+          console.error('Chords file URL is missing.');
+          $('#chord-content').html('<p>No chords file specified.</p>');
+          $('#loading').addClass('hidden'); // Sembunyikan animasi loading
+          $('#chord-content').removeClass('hidden'); // Tampilkan pesan error
+        }
+      });
+    </script>
+  </body>
+</html>
