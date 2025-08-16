@@ -45,13 +45,20 @@ function updateSongList() {
 
 function renderPagination() {
   const searchInput = $('#search-input').val().toLowerCase();
-  const filteredData = songData.filter((item) => item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput));
+  const filteredData = songData.filter((item) =>
+    item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput)
+  );
 
-  const totalPages = Math.ceil(filteredData.length / pageSize);
+  const totalItems = filteredData.length;
+  const totalPages = Math.ceil(totalItems / pageSize);
   const paginationContainer = $('#pagination');
   paginationContainer.empty();
 
-  if (totalPages <= 1) return;
+  if (totalPages <= 1 && totalItems <= pageSize) {
+    // Tampilkan info total data walau tidak ada pagination
+    paginationContainer.append($('<span>').text(`Total Data: ${totalItems}`));
+    return;
+  }
 
   const prevBtn = $('<button>')
     .text('Previous')
@@ -76,7 +83,12 @@ function renderPagination() {
     }
   });
 
+  const startItem = (currentPage - 1) * pageSize + 1;
+  const endItem = Math.min(currentPage * pageSize, totalItems);
+
   paginationContainer.append(prevBtn);
-  paginationContainer.append($('<span>').text(` Page ${currentPage} of ${totalPages} `));
+  paginationContainer.append(
+    $('<span>').text(` Showing ${startItem} to ${endItem} of ${totalItems} songs `)
+  );
   paginationContainer.append(nextBtn);
 }
