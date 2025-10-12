@@ -1,6 +1,21 @@
 [
   {
     "artist": "Slank ",
+    "song": "Cinta",
+    "chords": "/chords/slank-cinta.html"
+  },
+  {
+    "artist": "Nidji ",
+    "song": "Sumpah dan Cinta Matiku",
+    "chords": "/chords/nidji-sumpah-dan-cinta-matiku.html"
+  },
+  {
+    "artist": "Rizky Febian & Adrian Khalif ",
+    "song": "Alamak",
+    "chords": "/chords/rizky-febian-adrian-khalif-alamak.html"
+  },
+  {
+    "artist": "Slank ",
     "song": "Maafkan",
     "chords": "/chords/slank-maafkan.html"
   },
