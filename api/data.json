@@ -1,5 +1,15 @@
 [
   {
+    "artist": "3 Doors Down ",
+    "song": "Here Without You",
+    "chords": "/chords/3-doors-down-here-without-you.html"
+  },
+  {
+    "artist": "2D ",
+    "song": "Masih Ada",
+    "chords": "/chords/2d-masih-ada.html"
+  },
+  {
     "artist": "Slank ",
     "song": "Cinta",
     "chords": "/chords/slank-cinta.html"
@@ -387,7 +397,7 @@
   {
     "artist": "4 Non Blondes",
     "song": "What's Up",
-    "chords": "https://mychords.vercel.app/chords/4non-blondes-whats-up.html"
+    "chords": "/chords/4non-blondes-whats-up.html"
   },
   {
     "artist": "Ada Band",
