@@ -57,6 +57,7 @@
     <script src="/scripts/jquery-3.7.0.min.js"></script>
     <script src="/scripts/fetchcomponents.js"></script>
     <script src="/scripts/chords-layout-script.js"></script>
+    <script src="/scripts/chords-modal.js"></script>
 
     <!-- Dynamic Meta & Title via JS -->
     <script>
@@ -79,7 +80,7 @@
         $('head').append(`<meta name="description" content="${metaDescription}">`);
 
         // Set Canonical URL
-        const canonicalUrl = `https://mychords.com/chords-layout.html?artist=${encodeURIComponent(artist)}&song=${encodeURIComponent(song)}`;
+        const canonicalUrl = `/chords-layout.html?artist=${encodeURIComponent(artist)}&song=${encodeURIComponent(song)}`;
         $('head').append(`<link rel="canonical" href="${canonicalUrl}" />`);
 
         // Load Konten Chord

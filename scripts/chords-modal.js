@@ -1,42 +1,71 @@
-$(document).ready(function () {
-  // Load modal chord
-  $('#modal-placeholder').load('/components/chord-modal.html', function () {
-    console.log('Chord modal loaded successfully.');
-    console.log('Checking if modal exists:', $('#chord-modal').length);
+$(document).on('click', '.chord', function () {
+  console.log('\n========== CHORD CLICKED ==========');
 
-    // Event listener klik chord
-    $(document).on('click', '.chord', function () {
-      console.log('Chord clicked:', $(this).text());
+  // Ambil nama chord dari atribut data-name atau teks
+  const chordName = $(this).attr('data-name')?.trim() || $(this).text().trim();
+  console.log('🎵 Original chord:', chordName);
 
-      if (!$('#chord-modal').length) {
-        console.error('Chord modal is not loaded yet.');
-        return;
-      }
+  if (!chordName) {
+    console.error('❌ Tidak ada nama chord ditemukan');
+    return;
+  }
 
-      const chordName = $(this).attr('data-name') || $(this).text().trim();
-      const imgSrc = `/images/chords-library/${chordName}.svg`;
+  // Konversi: F#M7 → FSharpM7
+  const fileName = chordName.replace(/#/g, 'Sharp').replace(/b/g, 'Flat').replace(/\s+/g, '');
+  console.log('🪶 Converted fileName:', fileName);
 
-      $('#chord-image').hide();
+  // Pastikan modal sudah siap
+  if (!$('#chord-modal').length || !$('#chord-image').length) {
+    console.error('❌ Modal belum siap! Coba klik lagi setelah halaman siap.');
+    alert('Modal belum siap. Silakan tunggu sebentar lalu coba lagi.');
+    return;
+  }
+
+  // Tampilkan modal
+  $('#chord-modal').css('display', 'flex').hide().fadeIn(200);
+
+  // Reset isi modal
+  $('#chord-message').remove();
+  $('#chord-image').hide().attr('src', '');
+  $('.modal-content').append('<p id="chord-message" style="margin-top: 15px;">Loading chord...</p>');
+
+  // 🔧 Gunakan fileName (bukan chordName)
+  const basePath = `/images/chords-library/${fileName}`;
+  console.log('🧩 Base path:', basePath);
+
+  const extensions = ['svg', 'png', 'jpg', 'jpeg'];
+  let index = 0;
+
+  function tryNextExtension() {
+    if (index >= extensions.length) {
+      console.error('❌ Semua format gagal dimuat');
+      $('#chord-message').text('Chord not found').css('color', '#e31708');
+      return;
+    }
+
+    const fullPath = `${basePath}.${extensions[index]}`;
+    console.log(`🔍 Attempt ${index + 1}/${extensions.length}: ${fullPath}`);
+
+    const img = new Image();
+    img.onload = function () {
+      console.log('✅ Image loaded successfully:', fullPath);
       $('#chord-message').remove();
-
       $('#chord-image')
-        .attr('src', imgSrc)
-        .off('error')
-        .on('error', function () {
-          console.error(`Image not found: ${imgSrc}`);
-          $(this).hide();
-          $('<p id="chord-message">Chord not found</p>').appendTo('.modal-content');
+        .attr('src', fullPath)
+        .css({
+          display: 'block',
+          'max-width': '100%',
+          margin: '10px auto',
         })
-        .show();
+        .fadeIn(200);
+    };
+    img.onerror = function () {
+      console.warn('❌ Not found:', fullPath);
+      index++;
+      tryNextExtension();
+    };
+    img.src = fullPath;
+  }
 
-      $('#chord-modal').fadeIn().css('display', 'flex');
-    });
-
-    // Event untuk menutup modal
-    $(document).on('click', '.close', function () {
-      $('#chord-modal').fadeOut();
-    });
-
-    // **Hapus sementara event klik luar modal untuk debugging**
-  });
+  tryNextExtension();
 });
