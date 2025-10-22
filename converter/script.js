@@ -1,163 +1,185 @@
-let fileContent = '';
-
-document.addEventListener('DOMContentLoaded', () => {
-  const dropArea = document.getElementById('dropArea');
-
-  dropArea.addEventListener('dragover', (e) => {
-    e.preventDefault();
-    dropArea.classList.add('dragover');
-  });
-
-  dropArea.addEventListener('dragleave', () => {
-    dropArea.classList.remove('dragover');
-  });
-
-  dropArea.addEventListener('drop', (e) => {
-    e.preventDefault();
-    dropArea.classList.remove('dragover');
-
-    const file = e.dataTransfer.files[0];
-    if (file && file.type === 'text/plain') {
-      showLoading();
-      readFile(file);
-    } else {
-      alert('Hanya file .txt yang didukung!');
-    }
-  });
-
-  document.getElementById('fileInput').addEventListener('change', (e) => {
-    const file = e.target.files[0];
-    if (file) {
-      showLoading();
-      readFile(file);
-    }
-  });
-});
-
-function readFile(file) {
-  const reader = new FileReader();
-  reader.onload = (e) => {
-    fileContent = e.target.result;
-    hideLoading();
-    if (!fileContent.trim()) {
-      alert('File kosong, mohon pastikan file berisi lirik dan chord.');
-      return;
-    }
-    showSuccessAlert();
-  };
-  reader.readAsText(file);
-}
-
-function convertFile() {
-  const manualInput = document.getElementById('manualInput').value.trim();
-  const inputText = manualInput ? manualInput : fileContent;
-
-  if (!inputText) {
-    alert('Silakan upload file, drop file, atau ketik lirik & chord terlebih dahulu.');
+function formatChords() {
+  const input = document.getElementById('inputText').value;
+  if (!input.trim()) {
+    alert('Please enter some lyrics with chords!');
     return;
   }
 
-  const htmlOutput = convertLirikChordToHTML(inputText);
-  const outputContainer = document.getElementById('outputContainer');
-  const outputDiv = document.getElementById('output');
-
-  outputDiv.innerHTML = htmlOutput;
-  outputContainer.classList.remove('hidden');
+  const formattedHTML = processLyrics(input);
+  document.getElementById('outputHTML').value = formattedHTML;
+  document.getElementById('previewContainer').innerHTML = formattedHTML;
 }
 
-function convertLirikChordToHTML(text) {
-  const lines = text.split('\n');
-  let html = `<div class="lyric"><pre>\n`;
-  let insideReff = false;
+function processLyrics(input) {
+  const lines = input.split('\n');
+  let result = '<div class="lyric">\n  <pre>';
+  let inReff = false;
+  let reffContent = '';
+  let inSectionTitle = false;
+  let sectionTitleContent = '';
 
-  // Regex final untuk deteksi chord secara lengkap
-  const chordRegex = /([A-G][#b]?(?:m|M|maj|dim|aug)?(?:7|9|11|13)?(?:-5|-9)?(?:\/[A-G][#b]?)?)/g;
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const trimmedLine = line.trim();
 
-  lines.forEach((line) => {
-    if (line.trim() === '') {
-      html += '\n';
-      return;
-    }
-
-    // Deteksi baris Reff
-    if (line.trim().toLowerCase().startsWith('reff')) {
-      if (insideReff) {
-        html += `</span>\n`; // Tutup reff sebelumnya kalau ada
+    // Check if line starts with section markers (Intro, Outro, Interlude, Bridge)
+    if (/^(Intro|Outro|Interlude|Bridge)\s*:/i.test(trimmedLine)) {
+      // Close any open reff
+      if (inReff) {
+        result += formatReffSection(reffContent);
+        reffContent = '';
+        inReff = false;
       }
-      html += `<span class="reff">\n<b>Reff</b>\n`;
-      insideReff = true;
-      return;
+      // Start section title collection
+      inSectionTitle = true;
+      sectionTitleContent = processChords(line) + '\n';
+      continue;
     }
 
-    // Section title seperti "Intro:", "Verse 1:", dll.
-    if (line.includes(':')) {
-      html += `<span class="section-title">${line.trim()}</span>\n`;
-      return;
+    // If we're collecting section title lines
+    if (inSectionTitle) {
+      // Check if this line is empty or starts lyrics (has dots or lowercase start)
+      if (trimmedLine === '' || /^\.\./.test(trimmedLine) || /^[a-z]/.test(trimmedLine)) {
+        // Close the section title
+        result += '<span class="section-title">\n' + sectionTitleContent + '</span>\n';
+        inSectionTitle = false;
+        sectionTitleContent = '';
+
+        // Process the current line normally
+        if (trimmedLine === '') {
+          result += '\n';
+        } else {
+          result += processChords(line) + '\n';
+        }
+        continue;
+      } else {
+        // Continue adding to section title
+        sectionTitleContent += processChords(line) + '\n';
+        continue;
+      }
     }
 
-    // Proses baris lirik/chord
-    let processedLine = '';
-    let lastIndex = 0;
+    // Check if this is a Reff/Chorus line
+    if (/^(Reff|Chorus)$/i.test(trimmedLine)) {
+      // Close any previous reff
+      if (inReff) {
+        result += formatReffSection(reffContent);
+        reffContent = '';
+      }
+      inReff = true;
+      reffContent += '<b>' + trimmedLine + '</b>\n';
+      continue;
+    }
 
-    line.replace(chordRegex, (match, chord, offset) => {
-      // Tambahkan teks biasa sebelum chord
-      processedLine += line.substring(lastIndex, offset);
+    // If we're in a reff section
+    if (inReff) {
+      // Check if we hit an empty line or section marker - end reff
+      if (trimmedLine === '' || /^(Intro|Outro|Interlude|Bridge)\s*:/i.test(trimmedLine)) {
+        result += formatReffSection(reffContent);
+        reffContent = '';
+        inReff = false;
 
-      // Bungkus chord di dalam <span>
-      processedLine += `<span data-name="${chord}" class="chord">${chord}</span>`;
-
-      // Update lastIndex ke akhir chord yang diproses
-      lastIndex = offset + chord.length;
-
-      return chord;
-    });
-
-    // Tambahkan teks sisa setelah chord terakhir
-    processedLine += line.substring(lastIndex);
-
-    html += processedLine + '\n';
-  });
-
-  // Tutup tag reff terakhir jika masih terbuka
-  if (insideReff) {
-    html += `</span>\n`;
+        if (trimmedLine === '') {
+          result += '\n';
+          continue;
+        } else {
+          // Start new section title
+          inSectionTitle = true;
+          sectionTitleContent = processChords(line) + '\n';
+          continue;
+        }
+      }
+      // Add line to reff content
+      reffContent += processChords(line) + '\n';
+    } else {
+      // Regular line (not in reff)
+      if (trimmedLine === '') {
+        result += '\n';
+      } else {
+        result += processChords(line) + '\n';
+      }
+    }
   }
 
-  html += `</pre></div>`;
-  return html;
+  // Close any remaining section title
+  if (inSectionTitle) {
+    result += '<span class="section-title">\n' + sectionTitleContent + '</span>\n';
+  }
+
+  // Close any remaining reff
+  if (inReff) {
+    result += formatReffSection(reffContent);
+  }
+
+  result += '</pre>\n</div>';
+  return result;
+}
+
+function formatReffSection(content) {
+  return '<span class="reff">\n' + content + '</span>\n';
+}
+
+function processChords(text) {
+  // Pattern to match chords: A-G followed by optional modifiers
+  const chordPattern = /\b([A-G][#b]?(?:maj|min|m|M|\+|-|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)?(?:\/[A-G][#b]?)?)\b/g;
+
+  return text.replace(chordPattern, (match, chord) => {
+    // Convert uppercase M followed by number to Maj (e.g., EM7 -> EMaj7)
+    let displayChord = chord;
+    let dataChord = chord;
+
+    if (/[A-G][#b]?M[0-9]/.test(chord)) {
+      dataChord = chord.replace(/M([0-9])/, 'Maj$1');
+    }
+
+    // Convert slash chords to "on" notation for data-name (e.g., G/B -> GonB)
+    dataChord = dataChord.replace(/\//, 'on');
+
+    return `<span data-name="${dataChord}" class="chord">${displayChord}</span>`;
+  });
+}
+
+function clearAll() {
+  document.getElementById('inputText').value = '';
+  document.getElementById('outputHTML').value = '';
+  document.getElementById('previewContainer').innerHTML = '<div class="empty-state">Your formatted chords will appear here</div>';
 }
 
 function copyToClipboard() {
-  const outputDiv = document.getElementById('output');
-  const tempTextArea = document.createElement('textarea');
-  tempTextArea.value = outputDiv.innerHTML;
+  const outputHTML = document.getElementById('outputHTML');
+  if (!outputHTML.value.trim()) {
+    alert('Nothing to copy! Please format some chords first.');
+    return;
+  }
 
-  document.body.appendChild(tempTextArea);
-  tempTextArea.select();
-  document.execCommand('copy');
-  document.body.removeChild(tempTextArea);
+  outputHTML.select();
+  outputHTML.setSelectionRange(0, 99999);
 
-  alert('HTML hasil konversi berhasil disalin!');
+  try {
+    document.execCommand('copy');
+    const successMsg = document.getElementById('copySuccess');
+    successMsg.style.display = 'block';
+    setTimeout(() => {
+      successMsg.style.display = 'none';
+    }, 2000);
+  } catch (err) {
+    alert('Failed to copy. Please select the text manually and copy.');
+  }
 }
 
-function downloadHTML() {
-  const outputDiv = document.getElementById('output').innerHTML;
-  const blob = new Blob([outputDiv], {type: 'text/html'});
-  const link = document.createElement('a');
-  link.href = URL.createObjectURL(blob);
-  link.download = 'chord-lirik.html';
-  link.click();
-}
+// Auto-format on input change
+document.addEventListener('DOMContentLoaded', function () {
+  const inputText = document.getElementById('inputText');
 
-function showLoading() {
-  document.getElementById('loadingIndicator').classList.remove('hidden');
-  document.getElementById('successAlert').classList.add('hidden');
-}
-
-function hideLoading() {
-  document.getElementById('loadingIndicator').classList.add('hidden');
-}
-
-function showSuccessAlert() {
-  document.getElementById('successAlert').classList.remove('hidden');
-}
+  inputText.addEventListener('input', function () {
+    const input = this.value;
+    if (input.trim()) {
+      const formattedHTML = processLyrics(input);
+      document.getElementById('outputHTML').value = formattedHTML;
+      document.getElementById('previewContainer').innerHTML = formattedHTML;
+    } else {
+      document.getElementById('outputHTML').value = '';
+      document.getElementById('previewContainer').innerHTML = '<div class="empty-state">Your formatted chords will appear here</div>';
+    }
+  });
+});

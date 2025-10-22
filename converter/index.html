@@ -2,33 +2,61 @@
 <html lang="id">
   <head>
     <meta charset="UTF-8" />
-    <title>Chord to HTML Converter</title>
+    <title>Chord Chart Formatter V2</title>
     <link href="/images/logo5.png" rel="icon" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
-      <h1>🎶 Chord to HTML Converter 🎶</h1>
-      <p>Upload file, drag & drop, atau ketik lirik & chord secara manual.</p>
-
-      <div id="dropArea" class="upload-box">
-        <input type="file" id="fileInput" accept=".txt" />
-        <p>Atau seret dan lepaskan file di sini</p>
+      <div class="header">
+        <h1>Chord Chart Formatter V2</h1>
       </div>
 
-      <textarea id="manualInput" class="manual-input" placeholder="Ketik lirik & chord di sini..."></textarea>
+      <div class="main-content">
+        <div class="top-section">
+          <div class="input-section">
+            <div class="section-title-header">Input</div>
+            <textarea
+              class="input-area"
+              id="inputText"
+              placeholder="Paste your chord chart here...
 
-      <div class="loading hidden" id="loadingIndicator">⏳ Mengupload dan memproses...</div>
-      <div class="alert hidden" id="successAlert">✅ File berhasil diupload dan diproses!</div>
+Example:
+Intro : B Em C Am D (2X)
+        G
+  
+G  B        Em C
+..oo ku patah hati lagi
+G     B     Em C
+..tuk yang kesekian kali
 
-      <button class="convert-btn" onclick="convertFile()">Convert</button>
+Reff
+G     B      Em     C
+haruskah aku terus mencari dan mencari
+G      B       Em     C
+sanggupkah aku temukan cinta sejati"
+            ></textarea>
+          </div>
 
-      <button class="copy-btn" onclick="copyToClipboard()">📋 Copy</button>
-      <button class="download-btn" onclick="downloadHTML()">💾 Download HTML</button>
+          <div class="output-section">
+            <div class="section-title-header">Preview</div>
+            <div id="previewContainer" class="output-area">
+              <div class="empty-state">Your formatted chords will appear here</div>
+            </div>
+          </div>
+        </div>
 
-      <div id="outputContainer" class="output-container hidden">
-        <h3>Hasil Konversi</h3>
-        <div id="output" class="output"></div>
+        <div class="button-group">
+          <button class="format-btn" onclick="formatChords()">🎼 Format Chords</button>
+          <button class="copy-btn" onclick="copyToClipboard()">📋 Copy HTML</button>
+          <button class="clear-btn" onclick="clearAll()">🗑️ Clear All</button>
+        </div>
+
+        <div class="input-section full-width">
+          <div class="section-title-header">HTML Code</div>
+          <textarea class="html-output" id="outputHTML" readonly></textarea>
+          <div id="copySuccess" class="success-message">HTML copied successfully!</div>
+        </div>
       </div>
     </div>
 
