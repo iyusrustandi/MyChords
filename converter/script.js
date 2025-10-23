@@ -121,7 +121,8 @@ function formatReffSection(content) {
 
 function processChords(text) {
   // Pattern to match chords: A-G followed by optional modifiers
-  const chordPattern = /\b([A-G][#b]?(?:maj|min|m|M|\+|-|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)?(?:\/[A-G][#b]?)?)\b/g;
+  // Using lookahead/lookbehind to avoid word boundaries that don't work with #
+  const chordPattern = /(?:^|\s)([A-G][#b]?(?:maj|min|m|M|\+|-|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)?(?:\/[A-G][#b]?)?)(?=\s|$|[^A-Za-z0-9#b+\-/])/g;
 
   return text.replace(chordPattern, (match, chord) => {
     // Convert uppercase M followed by number to Maj (e.g., EM7 -> EMaj7)
@@ -135,7 +136,8 @@ function processChords(text) {
     // Convert slash chords to "on" notation for data-name (e.g., G/B -> GonB)
     dataChord = dataChord.replace(/\//, 'on');
 
-    return `<span data-name="${dataChord}" class="chord">${displayChord}</span>`;
+    const chordSpan = `<span data-name="${dataChord}" class="chord">${displayChord}</span>`;
+    return match.replace(chord, chordSpan);
   });
 }
 
