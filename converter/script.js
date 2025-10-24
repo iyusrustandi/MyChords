@@ -125,18 +125,8 @@ function processChords(text) {
   const chordPattern = /(?:^|\s)([A-G][#b]?(?:maj|min|m|M|\+|-|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)?(?:\/[A-G][#b]?)?)(?=\s|$|[^A-Za-z0-9#b+\-/])/g;
 
   return text.replace(chordPattern, (match, chord) => {
-    // Convert uppercase M followed by number to Maj (e.g., EM7 -> EMaj7)
-    let displayChord = chord;
-    let dataChord = chord;
-
-    if (/[A-G][#b]?M[0-9]/.test(chord)) {
-      dataChord = chord.replace(/M([0-9])/, 'Maj$1');
-    }
-
-    // Convert slash chords to "on" notation for data-name (e.g., G/B -> GonB)
-    dataChord = dataChord.replace(/\//, 'on');
-
-    const chordSpan = `<span data-name="${dataChord}" class="chord">${displayChord}</span>`;
+    // Keep the original chord notation for both data-name and display
+    const chordSpan = `<span data-name="${chord}" class="chord">${chord}</span>`;
     return match.replace(chord, chordSpan);
   });
 }
