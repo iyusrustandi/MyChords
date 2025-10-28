@@ -1,177 +1,232 @@
-function formatChords() {
-  const input = document.getElementById('inputText').value;
-  if (!input.trim()) {
-    alert('Please enter some lyrics with chords!');
-    return;
-  }
-
-  const formattedHTML = processLyrics(input);
-  document.getElementById('outputHTML').value = formattedHTML;
-  document.getElementById('previewContainer').innerHTML = formattedHTML;
-}
-
-function processLyrics(input) {
-  const lines = input.split('\n');
-  let result = '<div class="lyric">\n  <pre>';
-  let inReff = false;
-  let reffContent = '';
-  let inSectionTitle = false;
-  let sectionTitleContent = '';
-
-  for (let i = 0; i < lines.length; i++) {
-    const line = lines[i];
-    const trimmedLine = line.trim();
-
-    // Check if line starts with section markers (Intro, Outro, Interlude, Bridge)
-    if (/^(Intro|Outro|Interlude|Bridge)\s*:/i.test(trimmedLine)) {
-      // Close any open reff
-      if (inReff) {
-        result += formatReffSection(reffContent);
-        reffContent = '';
-        inReff = false;
-      }
-      // Start section title collection
-      inSectionTitle = true;
-      sectionTitleContent = processChords(line) + '\n';
-      continue;
-    }
-
-    // If we're collecting section title lines
-    if (inSectionTitle) {
-      // Check if this line is empty or starts lyrics (has dots or lowercase start)
-      if (trimmedLine === '' || /^\.\./.test(trimmedLine) || /^[a-z]/.test(trimmedLine)) {
-        // Close the section title
-        result += '<span class="section-title">\n' + sectionTitleContent + '</span>\n';
-        inSectionTitle = false;
-        sectionTitleContent = '';
-
-        // Process the current line normally
-        if (trimmedLine === '') {
-          result += '\n';
-        } else {
-          result += processChords(line) + '\n';
+ function formatChords() {
+        const input = document.getElementById('inputText').value;
+        if (!input.trim()) {
+          alert('Please enter some lyrics with chords!');
+          return;
         }
-        continue;
-      } else {
-        // Continue adding to section title
-        sectionTitleContent += processChords(line) + '\n';
-        continue;
+
+        const formattedHTML = processLyrics(input);
+        document.getElementById('outputHTML').value = formattedHTML;
+        document.getElementById('previewContainer').innerHTML = formattedHTML;
       }
-    }
 
-    // Check if this is a Reff/Chorus line
-    if (/^(Reff|Chorus)$/i.test(trimmedLine)) {
-      // Close any previous reff
-      if (inReff) {
-        result += formatReffSection(reffContent);
-        reffContent = '';
+      function processLyrics(input) {
+        const lines = input.split('\n');
+        let result = '<div class="lyric">\n  <pre>';
+        let inReff = false;
+        let reffContent = '';
+        let inSectionTitle = false;
+        let sectionTitleContent = '';
+
+        for (let i = 0; i < lines.length; i++) {
+          const line = lines[i];
+          const trimmedLine = line.trim();
+
+          // Check if line starts with section markers (Intro, Outro, Interlude, Bridge)
+          if (/^(Intro|Outro|Interlude|Bridge)\s*:/i.test(trimmedLine)) {
+            // Close any open reff
+            if (inReff) {
+              result += formatReffSection(reffContent);
+              reffContent = '';
+              inReff = false;
+            }
+            // Start section title collection
+            inSectionTitle = true;
+            sectionTitleContent = processChords(line) + '\n';
+            continue;
+          }
+
+          // If we're collecting section title lines
+          if (inSectionTitle) {
+            // Check if this line is empty or starts lyrics (has dots or lowercase start)
+            if (trimmedLine === '' || /^\.\./.test(trimmedLine) || /^[a-z]/.test(trimmedLine)) {
+              // Close the section title
+              result += '<span class="section-title">\n' + sectionTitleContent + '</span>\n';
+              inSectionTitle = false;
+              sectionTitleContent = '';
+              
+              // Process the current line normally
+              if (trimmedLine === '') {
+                result += '\n';
+              } else {
+                result += processChords(line) + '\n';
+              }
+              continue;
+            } else {
+              // Continue adding to section title
+              sectionTitleContent += processChords(line) + '\n';
+              continue;
+            }
+          }
+
+          // Check if this is a Reff/Chorus line
+          if (/^(Reff|Chorus)$/i.test(trimmedLine)) {
+            // Close any previous reff
+            if (inReff) {
+              result += formatReffSection(reffContent);
+              reffContent = '';
+            }
+            inReff = true;
+            reffContent += '<b>' + trimmedLine + '</b>\n';
+            continue;
+          }
+
+          // If we're in a reff section
+          if (inReff) {
+            // Check if we hit an empty line or section marker - end reff
+            if (trimmedLine === '' || /^(Intro|Outro|Interlude|Bridge)\s*:/i.test(trimmedLine)) {
+              result += formatReffSection(reffContent);
+              reffContent = '';
+              inReff = false;
+              
+              if (trimmedLine === '') {
+                result += '\n';
+                continue;
+              } else {
+                // Start new section title
+                inSectionTitle = true;
+                sectionTitleContent = processChords(line) + '\n';
+                continue;
+              }
+            }
+            // Add line to reff content
+            reffContent += processChords(line) + '\n';
+          } else {
+            // Regular line (not in reff)
+            if (trimmedLine === '') {
+              result += '\n';
+            } else {
+              result += processChords(line) + '\n';
+            }
+          }
+        }
+
+        // Close any remaining section title
+        if (inSectionTitle) {
+          result += '<span class="section-title">\n' + sectionTitleContent + '</span>\n';
+        }
+
+        // Close any remaining reff
+        if (inReff) {
+          result += formatReffSection(reffContent);
+        }
+
+        result += '</pre>\n</div>';
+        return result;
       }
-      inReff = true;
-      reffContent += '<b>' + trimmedLine + '</b>\n';
-      continue;
-    }
 
-    // If we're in a reff section
-    if (inReff) {
-      // Check if we hit an empty line or section marker - end reff
-      if (trimmedLine === '' || /^(Intro|Outro|Interlude|Bridge)\s*:/i.test(trimmedLine)) {
-        result += formatReffSection(reffContent);
-        reffContent = '';
-        inReff = false;
+      function formatReffSection(content) {
+        return '<span class="reff">\n' + content + '</span>\n';
+      }
 
-        if (trimmedLine === '') {
-          result += '\n';
-          continue;
-        } else {
-          // Start new section title
-          inSectionTitle = true;
-          sectionTitleContent = processChords(line) + '\n';
-          continue;
+      function processChords(text) {
+        // First, split by spaces to process each token
+        const tokens = text.split(/(\s+)/); // Keep whitespace in the result
+        
+        const processedTokens = tokens.map(token => {
+          // If token is just whitespace, return as is
+          if (/^\s+$/.test(token)) {
+            return token;
+          }
+          
+          // Check if token contains hyphen
+          if (/-/.test(token)) {
+            // Strategy: Match chords greedily from left to right
+            let remaining = token;
+            let result = '';
+            
+            while (remaining.length > 0) {
+              let matched = false;
+              
+              // Try to match progressively longer chord patterns
+              for (let len = remaining.length; len > 0; len--) {
+                const candidate = remaining.substring(0, len);
+                
+                // Check if candidate is a valid chord (including ones with -5, -9, +5, etc.)
+                if (/^[A-G][#b]?(?:maj|min|m|M|\+|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)*(?:\/[A-G][#b]?)?$/.test(candidate)) {
+                  // Check if next character is a hyphen followed by another chord root
+                  const nextChar = remaining.charAt(len);
+                  const nextNextChar = remaining.charAt(len + 1);
+                  
+                  // If next is hyphen and after that is a chord root (A-G), this is a separator
+                  if (nextChar === '-' && /[A-G]/.test(nextNextChar)) {
+                    result += `<span data-name="${candidate}" class="chord">${candidate}</span>-`;
+                    remaining = remaining.substring(len + 1);
+                    matched = true;
+                    break;
+                  }
+                  // If we're at the end or next is not a hyphen, take the full match
+                  else if (nextChar === '' || nextChar !== '-') {
+                    result += `<span data-name="${candidate}" class="chord">${candidate}</span>`;
+                    remaining = remaining.substring(len);
+                    matched = true;
+                    break;
+                  }
+                }
+              }
+              
+              // If nothing matched, take one character and continue
+              if (!matched) {
+                result += remaining.charAt(0);
+                remaining = remaining.substring(1);
+              }
+            }
+            
+            return result;
+          }
+          
+          // Check if token is a standalone chord
+          if (/^[A-G][#b]?(?:maj|min|m|M|\+|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)*(?:\/[A-G][#b]?)?$/.test(token)) {
+            return `<span data-name="${token}" class="chord">${token}</span>`;
+          }
+          
+          return token;
+        });
+        
+        return processedTokens.join('');
+      }
+
+      function clearAll() {
+        document.getElementById('inputText').value = '';
+        document.getElementById('outputHTML').value = '';
+        document.getElementById('previewContainer').innerHTML = '<div class="empty-state">Your formatted chords will appear here</div>';
+      }
+
+      function copyToClipboard() {
+        const outputHTML = document.getElementById('outputHTML');
+        if (!outputHTML.value.trim()) {
+          alert('Nothing to copy! Please format some chords first.');
+          return;
+        }
+
+        outputHTML.select();
+        outputHTML.setSelectionRange(0, 99999);
+
+        try {
+          document.execCommand('copy');
+          const successMsg = document.getElementById('copySuccess');
+          successMsg.style.display = 'block';
+          setTimeout(() => {
+            successMsg.style.display = 'none';
+          }, 2000);
+        } catch (err) {
+          alert('Failed to copy. Please select the text manually and copy.');
         }
       }
-      // Add line to reff content
-      reffContent += processChords(line) + '\n';
-    } else {
-      // Regular line (not in reff)
-      if (trimmedLine === '') {
-        result += '\n';
-      } else {
-        result += processChords(line) + '\n';
-      }
-    }
-  }
 
-  // Close any remaining section title
-  if (inSectionTitle) {
-    result += '<span class="section-title">\n' + sectionTitleContent + '</span>\n';
-  }
+      // Auto-format on input change
+      document.addEventListener('DOMContentLoaded', function () {
+        const inputText = document.getElementById('inputText');
 
-  // Close any remaining reff
-  if (inReff) {
-    result += formatReffSection(reffContent);
-  }
-
-  result += '</pre>\n</div>';
-  return result;
-}
-
-function formatReffSection(content) {
-  return '<span class="reff">\n' + content + '</span>\n';
-}
-
-function processChords(text) {
-  // Pattern to match chords: A-G followed by optional modifiers
-  // Using lookahead/lookbehind to avoid word boundaries that don't work with #
-  const chordPattern = /(?:^|\s)([A-G][#b]?(?:maj|min|m|M|\+|-|dim|aug|sus|add)?[0-9]*(?:[-+][0-9]+)?(?:\/[A-G][#b]?)?)(?=\s|$|[^A-Za-z0-9#b+\-/])/g;
-
-  return text.replace(chordPattern, (match, chord) => {
-    // Keep the original chord notation for both data-name and display
-    const chordSpan = `<span data-name="${chord}" class="chord">${chord}</span>`;
-    return match.replace(chord, chordSpan);
-  });
-}
-
-function clearAll() {
-  document.getElementById('inputText').value = '';
-  document.getElementById('outputHTML').value = '';
-  document.getElementById('previewContainer').innerHTML = '<div class="empty-state">Your formatted chords will appear here</div>';
-}
-
-function copyToClipboard() {
-  const outputHTML = document.getElementById('outputHTML');
-  if (!outputHTML.value.trim()) {
-    alert('Nothing to copy! Please format some chords first.');
-    return;
-  }
-
-  outputHTML.select();
-  outputHTML.setSelectionRange(0, 99999);
-
-  try {
-    document.execCommand('copy');
-    const successMsg = document.getElementById('copySuccess');
-    successMsg.style.display = 'block';
-    setTimeout(() => {
-      successMsg.style.display = 'none';
-    }, 2000);
-  } catch (err) {
-    alert('Failed to copy. Please select the text manually and copy.');
-  }
-}
-
-// Auto-format on input change
-document.addEventListener('DOMContentLoaded', function () {
-  const inputText = document.getElementById('inputText');
-
-  inputText.addEventListener('input', function () {
-    const input = this.value;
-    if (input.trim()) {
-      const formattedHTML = processLyrics(input);
-      document.getElementById('outputHTML').value = formattedHTML;
-      document.getElementById('previewContainer').innerHTML = formattedHTML;
-    } else {
-      document.getElementById('outputHTML').value = '';
-      document.getElementById('previewContainer').innerHTML = '<div class="empty-state">Your formatted chords will appear here</div>';
-    }
-  });
-});
+        inputText.addEventListener('input', function () {
+          const input = this.value;
+          if (input.trim()) {
+            const formattedHTML = processLyrics(input);
+            document.getElementById('outputHTML').value = formattedHTML;
+            document.getElementById('previewContainer').innerHTML = formattedHTML;
+          } else {
+            document.getElementById('outputHTML').value = '';
+            document.getElementById('previewContainer').innerHTML = '<div class="empty-state">Your formatted chords will appear here</div>';
+          }
+        });
+      });
