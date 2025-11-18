@@ -1,8 +1,38 @@
 [
   {
+    "artist": "Bimbo ",
+    "song": "Sendiri",
+    "chords": "/chords/bimbo-sendiri.html"
+  },
+  {
+    "artist": "Taufan Purbo ",
+    "song": "Bimbang",
+    "chords": "/chords/taufan-purbo-bimbang.html"
+  },
+  {
+    "artist": "Andi Meriem Matalatta ",
+    "song": "Bimbang",
+    "chords": "/chords/andi-meriem-matalatta-bimbang.html"
+  },
+  {
+    "artist": "Ello ",
+    "song": "Pergi Untuk Kembali",
+    "chords": "/chords/ello-pergi-untuk-kembali.html"
+  },
+  {
     "artist": "Didi Kempot ",
     "song": "Pamer Bojo",
     "chords": "/chords/didi-kempot-pamer-bojo.html"
+  },
+  {
+    "artist": "Desy Ratnasari ",
+    "song": "Tenda Baru",
+    "chords": "/chords/desy-ratnasari-tenda-biru.html"
+  },
+  {
+    "artist": "Romeo ",
+    "song": "Bunga Terakhir",
+    "chords": "/chords/romeo-bunga-terakhir.html"
   },
   {
     "artist": "Andra and the Backbone ",
@@ -2171,6 +2201,11 @@
     "chords": "/chords/st12-saat-terakhir.html "
   },
   {
+    "artist": "Hendri Rotinsulu",
+    "song": "Juwita Malam",
+    "chords": "/chords/hendri-rotinsulu-juwita-malam.html "
+  },
+  {
     "artist": "Steelheart",
     "song": "She’s Gone",
     "chords": "/chords/steelheart_shesgone.html "
@@ -2199,6 +2234,11 @@
     "artist": "Tetty Kadi",
     "song": "Sepanjang Jalan Kenangan",
     "chords": "/chords/tettykadi_sepanjangjalan.html "
+  },
+  {
+    "artist": "Bebi Romeo Feat. Tata Janeta",
+    "song": "Bawalah Pergi Cintaku",
+    "chords": "/chords/bebi-rome-tata-janeta-bawalah-pergi-cintaku.html "
   },
   {
     "artist": "The Beatles",
