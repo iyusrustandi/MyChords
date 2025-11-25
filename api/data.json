@@ -1,8 +1,14 @@
 [
   {
+    "artist": "Heatwave ",
+    "song": "All I Am",
+    "chords": "/chords/heatwave-all-i-am.html"
+  },
+  {
     "artist": "Bimbo ",
     "song": "Sendiri",
-    "chords": "/chords/bimbo-sendiri.html"
+    "chords": "/chords/bimbo-sendiri.html",
+    "youtube": "https://www.youtube.com/watch?v=GZp7hbSSpWY"
   },
   {
     "artist": "Taufan Purbo ",
@@ -450,6 +456,11 @@
     "chords": "/chords/ada-band-haruskah-ku-mati.html"
   },
   {
+    "artist": "Ada Band",
+    "song": "Surga Cinta",
+    "chords": "/chords/ada-band-surga-cinta.html"
+  },
+  {
     "artist": "Jun Munthe",
     "song": "Pulut Roham",
     "chords": "/chords/jun-munthe-pulut-roham.html"
@@ -475,6 +486,11 @@
     "chords": "/chords/utha-likumahuwa-esok-kan-masih-ada.html"
   },
   {
+    "artist": "Utha Likumahuwa",
+    "song": "Untuk Apa Lagi",
+    "chords": "/chords/utha-likumahuwa-untuk-apa-lagi.html"
+  },
+  {
     "artist": "Kla Project",
     "song": "Yogyakarta",
     "chords": "/chords/kla-project-yogyakarta.html"
@@ -483,6 +499,11 @@
     "artist": "Padi",
     "song": "Sobat",
     "chords": "/chords/padi-sobat.html"
+  },
+  {
+    "artist": "Powerslaves",
+    "song": "Malam Ini",
+    "chords": "/chords/powerslaves-malam-ini.html"
   },
   {
     "artist": "Pongki Barata",
@@ -533,6 +554,16 @@
     "artist": "Adera",
     "song": "Lebih Indah",
     "chords": "/chords/adera-lebih-indah.html"
+  },
+  {
+    "artist": "Iklim",
+    "song": "Suci Dalam Debu",
+    "chords": "/chords/iklim-suci-dalam-debu.html"
+  },
+  {
+    "artist": "Ernie Djohan",
+    "song": "Kau Selalu Diahtiku",
+    "chords": "/chords/ernie-djohan-kau-selalu-diahtiku.html"
   },
   {
     "artist": "Afgan",
@@ -2011,9 +2042,24 @@
     "chords": "/chords/radiohead-creep.html "
   },
   {
+    "artist": "Letto",
+    "song": "Sebelum Cahaya",
+    "chords": "/chords/letto-sebelum-cahaya.html "
+  },
+  {
+    "artist": "Letto",
+    "song": "Sandaran Hati",
+    "chords": "/chords/letto-sandaran-hati.html "
+  },
+  {
     "artist": "Radja",
     "song": "Jujur",
     "chords": "/chords/radja_jujur.html "
+  },
+  {
+    "artist": "Radja",
+    "song": "Cinderella",
+    "chords": "/chords/radja_cinderella.html "
   },
   {
     "artist": "Radja",
@@ -2029,6 +2075,11 @@
     "artist": "RAN",
     "song": "Pandangan Pertama",
     "chords": "/chords/ran-pandangan-pertama.html "
+  },
+  {
+    "artist": "Second Civil",
+    "song": "Aku, Kau dan Kenanganku",
+    "chords": "/chords/second-civil-aku-kau-dan-kenanganku.html "
   },
   {
     "artist": "Rani",

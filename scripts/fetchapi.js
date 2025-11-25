@@ -1,3 +1,4 @@
+// scripts/fetchapi.js
 let songData = [];
 let pageSize = 25;
 let currentPage = 1;
@@ -32,10 +33,14 @@ function updateSongList() {
 
     const songLink = $('<a>')
       .attr({
-        href: `chords-layout.html?artist=${encodeURIComponent(item.artist)}&song=${encodeURIComponent(item.song)}&chords=${encodeURIComponent((item.chords || '').trim())}`,
+        href: `chords-layout.html?artist=${encodeURIComponent(item.artist)}
+      &song=${encodeURIComponent(item.song)}
+      &chords=${encodeURIComponent((item.chords || '').trim())}
+      &youtube=${encodeURIComponent((item.youtube || '').trim())}`,
         target: '_blank',
         rel: 'noopener noreferrer',
       })
+
       .text(`${item.artist} - ${item.song}`);
 
     songItem.append(songLink);
@@ -45,9 +50,7 @@ function updateSongList() {
 
 function renderPagination() {
   const searchInput = $('#search-input').val().toLowerCase();
-  const filteredData = songData.filter((item) =>
-    item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput)
-  );
+  const filteredData = songData.filter((item) => item.artist.toLowerCase().includes(searchInput) || item.song.toLowerCase().includes(searchInput));
 
   const totalItems = filteredData.length;
   const totalPages = Math.ceil(totalItems / pageSize);
@@ -87,8 +90,6 @@ function renderPagination() {
   const endItem = Math.min(currentPage * pageSize, totalItems);
 
   paginationContainer.append(prevBtn);
-  paginationContainer.append(
-    $('<span>').text(` Showing ${startItem} to ${endItem} of ${totalItems} songs `)
-  );
+  paginationContainer.append($('<span>').text(` Showing ${startItem} to ${endItem} of ${totalItems} songs `));
   paginationContainer.append(nextBtn);
 }
